@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    ":reviewer(team:team-rocket)"
+    ":reviewer(team:team-phoenix)"
   ],
   "dependencyDashboard": true,
   "ignorePaths": [
