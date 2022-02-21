@@ -10,5 +10,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/giantswarm/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/giantswarm/giantswarm/releases/tag/v0.1.0
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/giantswarm/default-apps-aws/releases/tag/v0.1.0
