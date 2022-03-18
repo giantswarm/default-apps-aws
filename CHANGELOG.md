@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `giantswarm.io/managed-by` label so apps are accepted by `app-admission-controller`.
 - Remove `app-operator.giantswarm.io/version` label as its replaced by `giantswarm.io/cluster`.
+- Update `aws-cni` app to `0.2.1`.
 
 ## [0.1.2] - 2022-03-09
 
