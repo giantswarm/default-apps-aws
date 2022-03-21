@@ -11,6 +11,6 @@ spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
   {{- include "config" . | nindent 2 }}
-  name: kiam
+  name: kiam-app
   namespace: kube-system
   version: 2.1.0
