@@ -12,6 +12,9 @@ metadata:
   namespace: {{ $.Release.Namespace }}
 spec:
   catalog: {{ .catalog }}
+  name: {{ .chartName }}
+  namespace: {{ .namespace }}
+  version: {{ .version }}
   kubeConfig:
     context:
       name: {{ $.Values.clusterName }}-admin@{{ $.Values.clusterName }}
