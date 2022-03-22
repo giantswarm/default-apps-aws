@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2022-03-22
+
 ## [0.1.5] - 2022-03-22
 
 - Move app into `values.yaml` file.
@@ -36,7 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.1.5...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.1.5...v0.2.0
 [0.1.5]: https://github.com/giantswarm/default-apps-aws/compare/v0.1.4...v0.1.5
 [0.1.4]: https://github.com/giantswarm/default-apps-aws/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/giantswarm/default-apps-aws/compare/v0.1.2...v0.1.3
