@@ -11,6 +11,6 @@ spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
   {{- include "config" . | nindent 2 }}
-  name: external-dns
+  name: external-dns-app
   namespace: kube-system
   version: 2.9.1
