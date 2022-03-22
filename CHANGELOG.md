@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.0] - 2022-03-22
 
+- Add `vertical-pod-autoscaler` app.
+
 ## [0.1.5] - 2022-03-22
 
 - Move app into `values.yaml` file.
