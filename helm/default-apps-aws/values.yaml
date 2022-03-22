@@ -1,2 +1,114 @@
 clusterName: ""
 organization: ""
+
+apps:
+  aws-cni:
+    appName: aws-cni
+    chartName: aws-cni
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: false
+    namespace: kube-system
+    version: 0.2.1
+  calico:
+    appName: calico
+    chartName: calico-policy-only
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: false
+    namespace: kube-system
+    version: 0.3.0
+  capi-node-labeler:
+    appName: capi-node-labeler
+    chartName: capi-node-labeler
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: false
+    namespace: kube-system
+    version: 0.3.3
+  certExporter:
+    appName: cert-exporter
+    chartName: cert-exporter
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 2.1.0
+  certManager:
+    appName: cert-manager
+    chartName: cert-manager-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 2.12.2
+  externalDns:
+    appName: external-dns
+    chartName: external-dns-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 2.9.1
+  kiam:
+    appName: kiam
+    chartName: kiam-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 2.1.0
+  kubeStateMetrics:
+    appName: kube-state-metrics
+    chartName: kube-state-metrics-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.7.0
+  metricsServer:
+    appName: metrics-server
+    chartName: metrics-server-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.6.0
+  netExporter:
+    appName: net-exporter
+    chartName: net-exporter
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.10.3
+  nodeExporter:
+    appName: node-exporter
+    chartName: node-exporter-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.9.0
