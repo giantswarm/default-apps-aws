@@ -6,3 +6,6 @@ home: https://github.com/giantswarm/default-apps-aws
 version: 0.1.0
 annotations:
   application.giantswarm.io/team: "phoenix"
+restrictions:
+  compatibleProviders:
+    - aws
