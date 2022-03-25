@@ -11,7 +11,7 @@ apps:
       secret: false
     forceUpgrade: false
     namespace: kube-system
-    version: 0.2.1
+    version: 0.2.2
   aws-ebs-csi-driver:
     appName: aws-ebs-csi-driver
     chartName: aws-ebs-csi-driver-app
