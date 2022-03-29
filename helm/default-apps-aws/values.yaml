@@ -62,6 +62,16 @@ apps:
     forceUpgrade: true
     namespace: kube-system
     version: 2.12.0
+  coreDNS:
+    appName: coredns
+    chartName: coredns-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.8.0
   externalDns:
     appName: external-dns
     chartName: external-dns-app

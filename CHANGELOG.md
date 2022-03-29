@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Bump `aws-cni-app` version.
 - Add `aws-ebs-csi-driver` app to the list.
+- Add `coredns` app to the list.
 
 ## [0.2.0] - 2022-03-22
 
