@@ -209,7 +209,7 @@
                         }
                     }
                 },
-		"cillium": {
+                "cillium": {
                     "type": "object",
                     "properties": {
                         "appName": {
