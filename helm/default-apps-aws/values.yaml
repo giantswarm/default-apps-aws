@@ -1,6 +1,13 @@
 clusterName: ""
 organization: ""
 
+userConfig:
+  cilium:
+    configMap:
+      values: |
+        defaultPolicies:
+          enabled: true
+
 apps:
   aws-ebs-csi-driver:
     appName: aws-ebs-csi-driver
