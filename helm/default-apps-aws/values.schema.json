@@ -2,6 +2,24 @@
     "$schema": "http://json-schema.org/schema#",
     "type": "object",
     "properties": {
+	"userConfig": {
+            "type": "object",
+	    "properties": {
+                "cillium": {
+                    "type": "object",
+		    "properties": {
+                        "configMap": {
+                            "type": "object",
+                            "properties": {
+                                "values": {
+                                   "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+	},
         "apps": {
             "type": "object",
             "properties": {
