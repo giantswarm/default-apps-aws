@@ -79,11 +79,11 @@ apps:
   cilium:
     appName: cilium
     chartName: cilium
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
       secret: false
-    forceUpgrade: false
+    forceUpgrade: true
     namespace: kube-system
     version: 0.2.4-bd7f7776bc86cd45c6c53e2380f1155772fc0647
   externalDns:
