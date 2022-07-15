@@ -2,44 +2,28 @@
     "$schema": "http://json-schema.org/schema#",
     "type": "object",
     "properties": {
+	"userConfig": {
+            "type": "object",
+	    "properties": {
+                "cillium": {
+                    "type": "object",
+		    "properties": {
+                        "configMap": {
+                            "type": "object",
+                            "properties": {
+                                "values": {
+                                   "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+	},
         "apps": {
             "type": "object",
             "properties": {
                 "aws-ebs-csi-driver": {
-                    "type": "object",
-                    "properties": {
-                        "appName": {
-                            "type": "string"
-                        },
-                        "catalog": {
-                            "type": "string"
-                        },
-                        "chartName": {
-                            "type": "string"
-                        },
-                        "clusterValues": {
-                            "type": "object",
-                            "properties": {
-                                "configMap": {
-                                    "type": "boolean"
-                                },
-                                "secret": {
-                                    "type": "boolean"
-                                }
-                            }
-                        },
-                        "forceUpgrade": {
-                            "type": "boolean"
-                        },
-                        "namespace": {
-                            "type": "string"
-                        },
-                        "version": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "calico": {
                     "type": "object",
                     "properties": {
                         "appName": {

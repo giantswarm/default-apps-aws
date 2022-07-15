@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add team label to helm resources.
 - Add `values.schema.json` file.
 - Use `cilium` as CNI instead of `aws-cni`.
+- Set custom values for `cilium` app.
+- Remove `calico-policy-only` app.
+
 
 ## [0.3.0] - 2022-03-29
 
