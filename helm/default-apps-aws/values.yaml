@@ -5,6 +5,10 @@ userConfig:
   cilium:
     configMap:
       values: |
+        ipam:
+          operator:
+            clusterPoolIPv4PodCIDRList:
+            - "100.64.0.0/10"
         defaultPolicies:
           enabled: true
           tolerations:
