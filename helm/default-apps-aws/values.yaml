@@ -6,9 +6,7 @@ userConfig:
     configMap:
       values: |
         ipam:
-          operator:
-            clusterPoolIPv4PodCIDRList:
-            - "100.64.0.0/12"
+          mode: kubernetes
         defaultPolicies:
           enabled: true
           tolerations:
