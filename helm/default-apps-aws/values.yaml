@@ -27,6 +27,8 @@ apps:
       secret: false
     forceUpgrade: false
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/aws-ebs-csi-driver-app
     version: 2.8.1
   capi-node-labeler:
     appName: capi-node-labeler
@@ -37,6 +39,8 @@ apps:
       secret: false
     forceUpgrade: false
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/capi-node-labeler-app
     version: 0.3.3
   certExporter:
     appName: cert-exporter
@@ -47,6 +51,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/cert-exporter
     version: 2.1.0
   certManager:
     appName: cert-manager
@@ -57,6 +63,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/cert-manager-app
     version: 2.12.0
   coreDNS:
     appName: coredns
@@ -67,6 +75,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/coredns-app
     version: 1.8.0
   cilium:
     appName: cilium
@@ -77,6 +87,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/cilium-app
     version: 0.2.4
   externalDns:
     appName: external-dns
@@ -87,6 +99,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/external-dns-app
     version: 2.9.1
   kiam:
     appName: kiam
@@ -97,6 +111,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/kiam-app
     version: 2.1.0
   kubeStateMetrics:
     appName: kube-state-metrics
@@ -107,6 +123,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/kube-state-metrics-app
     version: 1.7.0
   metricsServer:
     appName: metrics-server
@@ -117,6 +135,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/metrics-server-app
     version: 1.6.0
   netExporter:
     appName: net-exporter
@@ -127,6 +147,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/net-exporter
     version: 1.10.3
   nodeExporter:
     appName: node-exporter
@@ -137,6 +159,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/node-exporter-app
     version: 1.9.0
   vpa:
     appName: vertical-pod-autoscaler
@@ -147,6 +171,8 @@ apps:
       secret: false
     forceUpgrade: false
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/vertical-pod-autoscaler-app
     version: 2.1.2
   vpaCRD:
     appName: vertical-pod-autoscaler-crd
@@ -157,4 +183,6 @@ apps:
       secret: false
     forceUpgrade: false
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/vertical-pod-autoscaler-crd
     version: 1.0.0
