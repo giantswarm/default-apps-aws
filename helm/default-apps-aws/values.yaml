@@ -29,7 +29,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-ebs-csi-driver-app
-    version: 2.8.1
+    version: 2.16.1
   capi-node-labeler:
     appName: capi-node-labeler
     chartName: capi-node-labeler
