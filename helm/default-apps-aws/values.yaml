@@ -41,7 +41,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/capi-node-labeler-app
-    version: 0.3.3
+    version: 0.3.4
   certExporter:
     appName: cert-exporter
     chartName: cert-exporter
