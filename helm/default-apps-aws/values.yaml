@@ -113,7 +113,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/kiam-app
-    version: 2.1.0
+    version: 2.5.0
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics-app
