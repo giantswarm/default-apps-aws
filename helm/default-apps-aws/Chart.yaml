@@ -3,7 +3,7 @@ name: default-apps-aws
 description: A Helm chart for default-apps-aws
 engine: gotpl
 home: https://github.com/giantswarm/default-apps-aws
-version: 0.5.2
+version: 0.5.3
 annotations:
   application.giantswarm.io/team: "phoenix"
 restrictions:
