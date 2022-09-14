@@ -53,7 +53,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-exporter
-    version: 2.2.0
+    version: 2.3.0
   certManager:
     appName: cert-manager
     chartName: cert-manager-app
@@ -101,7 +101,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.15.2
+    version: 2.15.3
   kiam:
     appName: kiam
     chartName: kiam-app
@@ -113,7 +113,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/kiam-app
-    version: 2.1.0
+    version: 2.5.0
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
@@ -125,7 +125,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/kube-state-metrics-app
-    version: 1.12.1
+    version: 1.13.0
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
@@ -137,7 +137,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/metrics-server-app
-    version: 1.6.0
+    version: 2.0.0
   netExporter:
     appName: net-exporter
     chartName: net-exporter
@@ -149,7 +149,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/net-exporter
-    version: 1.10.3
+    version: 1.12.0
   nodeExporter:
     appName: node-exporter
     chartName: node-exporter-app
@@ -161,7 +161,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/node-exporter-app
-    version: 1.9.0
+    version: 1.13.0
   vpa:
     appName: vertical-pod-autoscaler
     chartName: vertical-pod-autoscaler-app
@@ -173,7 +173,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
-    version: 2.1.2
+    version: 2.5.0
   vpaCRD:
     appName: vertical-pod-autoscaler-crd
     chartName: vertical-pod-autoscaler-crd
