@@ -5,7 +5,8 @@ engine: gotpl
 home: https://github.com/giantswarm/default-apps-aws
 version: 0.5.4
 annotations:
-  application.giantswarm.io/team: "phoenix"
+  application.giantswarm.io/team: "hydra"
+  application.giantswarm.io/app-type: bundle
 restrictions:
   compatibleProviders:
     - aws
