@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `aws-pod-identity-webhook` for IRSA support.
 
+### Changed
+
+- Explicitly define Apps configmaps so we can use helm values when defining the config map content.
+
 ## [0.5.5] - 2022-10-04
 
 ## [0.5.4] - 2022-09-14
