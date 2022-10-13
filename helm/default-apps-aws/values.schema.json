@@ -2,28 +2,44 @@
     "$schema": "http://json-schema.org/schema#",
     "type": "object",
     "properties": {
-	"userConfig": {
-            "type": "object",
-	    "properties": {
-                "cillium": {
-                    "type": "object",
-		    "properties": {
-                        "configMap": {
-                            "type": "object",
-                            "properties": {
-                                "values": {
-                                   "type": "string"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-	},
         "apps": {
             "type": "object",
             "properties": {
                 "aws-ebs-csi-driver": {
+                    "type": "object",
+                    "properties": {
+                        "appName": {
+                            "type": "string"
+                        },
+                        "catalog": {
+                            "type": "string"
+                        },
+                        "chartName": {
+                            "type": "string"
+                        },
+                        "clusterValues": {
+                            "type": "object",
+                            "properties": {
+                                "configMap": {
+                                    "type": "boolean"
+                                },
+                                "secret": {
+                                    "type": "boolean"
+                                }
+                            }
+                        },
+                        "forceUpgrade": {
+                            "type": "boolean"
+                        },
+                        "namespace": {
+                            "type": "string"
+                        },
+                        "version": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "aws-pod-identity-webhook": {
                     "type": "object",
                     "properties": {
                         "appName": {
@@ -159,7 +175,7 @@
                         }
                     }
                 },
-                "coreDNS": {
+                "cilium": {
                     "type": "object",
                     "properties": {
                         "appName": {
@@ -193,7 +209,7 @@
                         }
                     }
                 },
-                "cillium": {
+                "coreDNS": {
                     "type": "object",
                     "properties": {
                         "appName": {
@@ -506,6 +522,24 @@
         },
         "organization": {
             "type": "string"
+        },
+        "userConfig": {
+            "type": "object",
+            "properties": {
+                "cilium": {
+                    "type": "object",
+                    "properties": {
+                        "configMap": {
+                            "type": "object",
+                            "properties": {
+                                "values": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -30,6 +30,18 @@ apps:
     # used by renovate
     # repo: giantswarm/aws-ebs-csi-driver-app
     version: 2.16.1
+  aws-pod-identity-webhook:
+    appName: aws-pod-identity-webhook
+    chartName: aws-pod-identity-webhook
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/aws-pod-identity-webhook
+    version: 0.10.0
   capi-node-labeler:
     appName: capi-node-labeler
     chartName: capi-node-labeler

@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `aws-pod-identity-webhook` for IRSA support.
+
 ## [0.5.5] - 2022-10-04
 
 ## [0.5.4] - 2022-09-14
