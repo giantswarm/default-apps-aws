@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Pass `cilium` configuration to use `cilium` as kube-proxy replacement.
 
+## [0.6.1] - 2022-10-18
+
+### Changed
+
+- Bumped Cilium to 0.5.0
+
 ## [0.6.0] - 2022-10-14
 
 ### Added
@@ -95,7 +101,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.6.1...HEAD
+[0.6.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.6.0...v0.6.1
 [0.6.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.5.5...v0.6.0
 [0.5.5]: https://github.com/giantswarm/default-apps-aws/compare/v0.5.4...v0.5.5
 [0.5.4]: https://github.com/giantswarm/default-apps-aws/compare/v0.5.3...v0.5.4
