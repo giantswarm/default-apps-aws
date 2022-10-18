@@ -7,6 +7,12 @@ userConfig:
       values: |
         ipam:
           mode: kubernetes
+        k8sServiceHost: api.{{ .Values.baseDomain }}
+        k8sServicePort: 443
+        kubeProxyReplacement: strict
+        hubble:
+          relay:
+            enabled: true
         defaultPolicies:
           enabled: true
           tolerations:

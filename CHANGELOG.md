@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Pass `cilium` configuration to use `cilium` as kube-proxy replacement.
+
 ## [0.6.0] - 2022-10-14
 
 ### Added
