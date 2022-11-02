@@ -8,6 +8,9 @@ metadata:
     chart-operator.giantswarm.io/force-helm-upgrade: "{{ .forceUpgrade }}"
   labels:
     {{- include "labels.common" $ | nindent 4 }}
+    {{- if .inCluster }}  
+    app-operator.giantswarm.io/version: 0.0.0
+    {{- end }}
   name: {{ $.Values.clusterName }}-{{ $appName }}
   namespace: {{ $.Release.Namespace }}
 spec:
