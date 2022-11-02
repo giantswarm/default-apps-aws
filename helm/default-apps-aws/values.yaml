@@ -208,7 +208,8 @@ apps:
     appName: observability-bundle
     chartName: observability-bundle
     catalog: default
-    namespace: kube-system
-    version: 0.1.1
+    namespace: ""
+    inCluster: true
     # used by renovate
     # repo: giantswarm/observability-bundle
+    version: 0.1.1

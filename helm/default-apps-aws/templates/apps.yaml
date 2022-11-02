@@ -13,8 +13,16 @@ metadata:
 spec:
   catalog: {{ .catalog }}
   name: {{ .chartName }}
+  {{- if .inCluster }}  
+  namespace: {{ $.Release.Namespace }}
+  {{- else }}
   namespace: {{ .namespace }}
+  {{- end }}
   version: {{ .version }}
+  {{- if .inCluster }}
+  kubeConfig:
+    inCluster: true
+  {{- else }}
   kubeConfig:
     context:
       name: {{ $.Values.clusterName }}-admin@{{ $.Values.clusterName }}
@@ -22,6 +30,7 @@ spec:
     secret:
       name: {{ $.Values.clusterName }}-kubeconfig
       namespace: {{ $.Release.Namespace}}
+  {{- end }}
   {{- with .clusterValues }}
   {{- if or .configMap .secret }}
   config:
