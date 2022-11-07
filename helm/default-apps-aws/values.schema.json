@@ -459,6 +459,20 @@
                         "chartName": {
                             "type": "string"
                         },
+                        "clusterValues": {
+                            "type": "object",
+                            "properties": {
+                                "configMap": {
+                                    "type": "boolean"
+                                },
+                                "secret": {
+                                    "type": "boolean"
+                                }
+                            }
+                        },
+                        "inCluster": {
+                            "type": "boolean"
+                        },
                         "namespace": {
                             "type": "string"
                         },
