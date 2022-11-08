@@ -215,4 +215,4 @@ apps:
       secret: false
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 0.1.1-cf38849abab32174f8118bb8cb51d5d4127afc9d
+    version: 0.1.1-a9193b25051b1e28bca39a01833491fa5aa60d0f
