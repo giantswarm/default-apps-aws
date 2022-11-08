@@ -207,7 +207,7 @@ apps:
   observability-bundle:
     appName: observability-bundle
     chartName: observability-bundle
-    catalog: default
+    catalog: default-test
     namespace: ""
     inCluster: true
     clusterValues:
@@ -215,4 +215,4 @@ apps:
       secret: false
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 0.1.1
+    version: 0.1.1-a15644eb8bc8362ddad27b1a69ee15c651fd9db6
