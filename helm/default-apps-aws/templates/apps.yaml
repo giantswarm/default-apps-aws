@@ -18,14 +18,10 @@ spec:
   name: {{ .chartName }}
   {{- if .inCluster }}  
   namespace: {{ $.Release.Namespace }}
-  {{- else }}
-  namespace: {{ .namespace }}
-  {{- end }}
-  version: {{ .version }}
-  {{- if .inCluster }}
   kubeConfig:
     inCluster: true
   {{- else }}
+  namespace: {{ .namespace }}
   kubeConfig:
     context:
       name: {{ $.Values.clusterName }}-admin@{{ $.Values.clusterName }}
@@ -34,6 +30,7 @@ spec:
       name: {{ $.Values.clusterName }}-kubeconfig
       namespace: {{ $.Release.Namespace}}
   {{- end }}
+  version: {{ .version }}
   {{- with .clusterValues }}
   {{- if or .configMap .secret }}
   config:
