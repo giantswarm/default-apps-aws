@@ -207,7 +207,7 @@ apps:
   observability-bundle:
     appName: observability-bundle
     chartName: observability-bundle
-    catalog: default-test
+    catalog: default
     namespace: ""
     inCluster: true
     clusterValues:
