@@ -152,6 +152,7 @@ apps:
       configMap: true
       secret: false
     forceUpgrade: true
+    privateCluster: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/kyverno-policies-connectivity
