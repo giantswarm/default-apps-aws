@@ -1,6 +1,14 @@
 {{- range $key, $value := .Values.apps }}
 {{- $appName := .appName }}
-{{- if and $.Values.clusdter.private .privateCluster }}
+# We want to exclude apps marked for private clusters only from clusters that
+# aren't private. At the same time we want to deploy all apps that aren't
+# marked with `privateCluster: true` to all clusters, regardless if they are
+# private or not.
+# This statement will always evaluate to true for non privateCluster apps (true
+# or $.Values.cluster.private) and will only evaluate to true when the app is
+# marked for private clusters if the cluster is private (false or
+# $.Values.cluster.private)
+{{- if or (not .privateCluster) $.Values.cluster.private }}
 ---
 apiVersion: application.giantswarm.io/v1alpha1
 kind: App
