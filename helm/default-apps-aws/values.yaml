@@ -144,7 +144,7 @@ apps:
     # used by renovate
     # repo: giantswarm/kube-state-metrics-app
     version: 1.13.0
-  {{ if and .Values.proxy .Values.proxy.http .Values.proxy.https }}
+  {{- if and .Values.proxy .Values.proxy.http .Values.proxy.https }}
   kyvernoPoliciesConnectivity:
     appName: kyverno-policies-connectivity
     chartName: kyverno-policies-connectivity
@@ -157,7 +157,7 @@ apps:
     # used by renovate
     # repo: giantswarm/kyverno-policies-connectivity
     version: 1.13.0
-  {{-
+  {{- end }}
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
