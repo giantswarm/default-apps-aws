@@ -78,7 +78,7 @@ apps:
     catalog: default
     clusterValues:
       configMap: true
-      secret: true
+      secret: false
     forceUpgrade: true
     namespace: kube-system
     # used by renovate
