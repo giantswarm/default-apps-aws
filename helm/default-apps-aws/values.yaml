@@ -123,15 +123,15 @@ apps:
   kiam:
     appName: kiam
     chartName: kiam-app
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
-      secret: false
+      secret: true
     forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/kiam-app
-    version: 2.5.0
+    version: 2.5.1-a7f635eeaef047a4c49c9aec2652fb4009c5ed9f
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
