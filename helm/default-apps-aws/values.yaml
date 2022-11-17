@@ -111,7 +111,7 @@ apps:
   externalDns:
     appName: external-dns
     chartName: external-dns-app
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: true
       secret: true
@@ -119,7 +119,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.17.1-7c4c7a90d92fa85f4a02eaa66576209cf786052f
+    version: 2.18.0
   kiam:
     appName: kiam
     chartName: kiam-app
