@@ -119,7 +119,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.17.1
+    version: 2.18.0
   kiam:
     appName: kiam
     chartName: kiam-app
