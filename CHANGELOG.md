@@ -11,7 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Bumped external-dns to v2.18.0
+- Bumped external-dns to v2.18.0.
+- Bumped kiam to v2.6.0. 
+- Bumped cert-manager to v2.18.0.
+- Configured external-dns, kiam and cert-manager for proxy.
 
 ## [0.8.1] - 2022-11-17
 
