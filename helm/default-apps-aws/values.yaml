@@ -204,3 +204,15 @@ apps:
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-crd
     version: 1.0.1
+  observability-bundle:
+    appName: observability-bundle
+    chartName: observability-bundle
+    catalog: default
+    namespace: ""
+    inCluster: true
+    clusterValues:
+      configMap: true
+      secret: false
+    # used by renovate
+    # repo: giantswarm/observability-bundle
+    version: 0.1.3
