@@ -75,7 +75,7 @@ apps:
   certManager:
     appName: cert-manager
     chartName: cert-manager-app
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
       secret: true
@@ -83,7 +83,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 2.18.0
+    version: 2.18.0-9d10ea214125ad214a30257da6ed8e226489596d
   coreDNS:
     appName: coredns
     chartName: coredns-app
