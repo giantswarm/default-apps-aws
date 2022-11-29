@@ -30,12 +30,12 @@ apps:
     catalog: default
     clusterValues:
       configMap: true
-      secret: false
+      secret: true
     forceUpgrade: false
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-ebs-csi-driver-app
-    version: 2.18.0
+    version: 2.19.0
   aws-pod-identity-webhook:
     appName: aws-pod-identity-webhook
     chartName: aws-pod-identity-webhook
