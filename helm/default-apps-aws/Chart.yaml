@@ -4,7 +4,7 @@ description: A Helm chart for default-apps-aws
 icon: https://s.giantswarm.io/app-icons/aws/1/dark.svg
 engine: gotpl
 home: https://github.com/giantswarm/default-apps-aws
-version: 0.12.0
+version: 0.12.1
 annotations:
   application.giantswarm.io/team: "hydra"
   application.giantswarm.io/app-type: bundle
