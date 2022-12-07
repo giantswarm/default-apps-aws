@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update `observability-bundle` from `0.1.3` to `0.1.4`
+
 ## [0.12.1] - 2022-12-06
+
+- Update `vertical-autoscaler-app` from `2.5.0` to `2.5.2`
 
 ## [0.12.0] - 2022-11-29
 
