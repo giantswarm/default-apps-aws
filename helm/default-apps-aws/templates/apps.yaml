@@ -54,8 +54,6 @@ spec:
 {{- end }}
 
 {{- end }}
-{{- end }}
-{{- end }}
 
 ---
 apiVersion: v1
