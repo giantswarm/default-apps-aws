@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.12.1] - 2022-12-06
 
+### Changed
+
 - Update `vertical-autoscaler-app` from `2.5.0` to `2.5.2`
 
 ## [0.12.0] - 2022-11-29
