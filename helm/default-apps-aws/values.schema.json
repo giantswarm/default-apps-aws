@@ -470,10 +470,10 @@
                                 }
                             }
                         },
-                        "inCluster": {
+                        "forceUpgrade": {
                             "type": "boolean"
                         },
-                        "forceUpgrade": {
+                        "inCluster": {
                             "type": "boolean"
                         },
                         "namespace": {
@@ -564,17 +564,10 @@
             "type": "object",
             "properties": {
                 "cilium": {
-                    "type": "object",
-                    "properties": {
-                        "configMap": {
-                            "type": "object",
-                            "properties": {
-                                "values": {
-                                    "type": "string"
-                                }
-                            }
-                        }
-                    }
+                    "type": "boolean"
+                },
+                "externalDns": {
+                    "type": "boolean"
                 }
             }
         }
