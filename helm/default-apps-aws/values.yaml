@@ -1,5 +1,8 @@
 clusterName: ""
 organization: ""
+aws:
+  iam:
+    customRoleName: ""
 
 # Add to this map the Apps that have a 'user-values' configmap defined in apps.yaml.
 userConfig:
