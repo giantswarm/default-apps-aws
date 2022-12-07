@@ -8,7 +8,7 @@ metadata:
     chart-operator.giantswarm.io/force-helm-upgrade: "{{ .forceUpgrade }}"
   labels:
     {{- include "labels.common" $ | nindent 4 }}
-    {{- if .inCluster }}  
+    {{- if .inCluster }}
     app-operator.giantswarm.io/version: 0.0.0
     {{- end }}
   name: {{ $.Values.clusterName }}-{{ $appName }}
@@ -16,7 +16,7 @@ metadata:
 spec:
   catalog: {{ .catalog }}
   name: {{ .chartName }}
-  {{- if .inCluster }}  
+  {{- if .inCluster }}
   namespace: {{ $.Release.Namespace }}
   kubeConfig:
     inCluster: true
@@ -44,47 +44,57 @@ spec:
       name: {{ $.Values.clusterName }}-cluster-values
       namespace: {{ $.Release.Namespace }}
   {{- end }}
-  {{- end }} 
+  {{- end }}
 {{- end }}
 {{- with (get $.Values.userConfig $key) }}
   userConfig:
-  {{- if .configMap }}
     configMap:
       name: {{ $.Values.clusterName }}-{{ $appName }}-user-values
       namespace: {{ $.Release.Namespace }}
-  {{- end }}
-  {{- if .secret }}
-    secret:
-      name: {{ $.Values.clusterName }}-{{ $appName }}-user-values
-      namespace: {{ $.Release.Namespace }}
-  {{- end }}
-  {{- end }}
+{{- end }}
 
-{{- with (get $.Values.userConfig $key) }}
-{{- if .configMap }}
+{{- end }}
+{{- end }}
+{{- end }}
+
 ---
 apiVersion: v1
 kind: ConfigMap
 metadata:
   labels:
     {{- include "labels.common" $ | nindent 4 }}
-  name: {{ $.Values.clusterName }}-{{ $appName }}-user-values
+  name: {{ $.Values.clusterName }}-external-dns-user-values
   namespace: {{ $.Release.Namespace }}
 data:
-  {{- (tpl (.configMap | toYaml | toString) $) | nindent 2 }}
-{{- end }}
-{{- if .secret }}
+  values: |
+    aws:
+      iam:
+        customRoleName: "{{ $.Values.aws.iam.customRoleName }}"
+      irsa: "true"
 ---
 apiVersion: v1
-kind: Secret
+kind: ConfigMap
 metadata:
   labels:
     {{- include "labels.common" $ | nindent 4 }}
-  name: {{ $.Values.clusterName }}-{{ $appName }}-user-values
+  name: {{ $.Values.clusterName }}-cilium-user-values
   namespace: {{ $.Release.Namespace }}
-stringData:
-  {{- (tpl (.secret | toYaml | toString) $) | nindent 2 }}
-{{- end }}
-{{- end }}
-
-{{- end }}
+data:
+  values: |
+    ipam:
+      mode: kubernetes
+    k8sServiceHost: api.{{ $.Values.baseDomain }}
+    k8sServicePort: 443
+    kubeProxyReplacement: strict
+    hubble:
+      relay:
+        enabled: true
+    defaultPolicies:
+      enabled: true
+      tolerations:
+        - effect: NoSchedule
+          operator: Exists
+        - effect: NoExecute
+          operator: Exists
+        - key: CriticalAddonsOnly
+          operator: Exists
