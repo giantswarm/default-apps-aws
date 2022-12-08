@@ -1,5 +1,8 @@
 clusterName: ""
 organization: ""
+aws:
+  iam:
+    customRoleName: ""
 
 userConfig:
   externalDns:
