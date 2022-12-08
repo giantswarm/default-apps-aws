@@ -1,9 +1,10 @@
 apiVersion: v2
 name: default-apps-aws
 description: A Helm chart for default-apps-aws
+icon: https://s.giantswarm.io/app-icons/aws/1/dark.svg
 engine: gotpl
 home: https://github.com/giantswarm/default-apps-aws
-version: 0.8.1
+version: 0.12.2
 annotations:
   application.giantswarm.io/team: "hydra"
   application.giantswarm.io/app-type: bundle

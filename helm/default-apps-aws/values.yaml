@@ -30,12 +30,12 @@ apps:
     catalog: default
     clusterValues:
       configMap: true
-      secret: false
+      secret: true
     forceUpgrade: false
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-ebs-csi-driver-app
-    version: 2.16.1
+    version: 2.19.0
   aws-pod-identity-webhook:
     appName: aws-pod-identity-webhook
     chartName: aws-pod-identity-webhook
@@ -78,12 +78,12 @@ apps:
     catalog: default
     clusterValues:
       configMap: true
-      secret: false
+      secret: true
     forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 2.15.3
+    version: 2.18.0
   coreDNS:
     appName: coredns
     chartName: coredns-app
@@ -107,31 +107,31 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cilium-app
-    version: 0.6.0
+    version: 0.6.1
   externalDns:
     appName: external-dns
     chartName: external-dns-app
     catalog: default
     clusterValues:
       configMap: true
-      secret: false
+      secret: true
     forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.17.1
+    version: 2.19.0
   kiam:
     appName: kiam
     chartName: kiam-app
     catalog: default
     clusterValues:
       configMap: true
-      secret: false
+      secret: true
     forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/kiam-app
-    version: 2.5.1
+    version: 2.6.0
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
@@ -143,7 +143,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/kube-state-metrics-app
-    version: 1.13.0
+    version: 1.14.1
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
@@ -191,7 +191,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
-    version: 2.5.0
+    version: 2.5.2
   vpaCRD:
     appName: vertical-pod-autoscaler-crd
     chartName: vertical-pod-autoscaler-crd
@@ -204,3 +204,16 @@ apps:
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-crd
     version: 1.0.1
+  observabilityBundle:
+    appName: observability-bundle
+    chartName: observability-bundle
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: false
+    inCluster: true
+    namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/observability-bundle
+    version: 0.1.4
