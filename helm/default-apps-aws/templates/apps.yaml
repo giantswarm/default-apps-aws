@@ -65,6 +65,9 @@ metadata:
   namespace: {{ $.Release.Namespace }}
 data:
   values: |
+    serviceAccount:
+      create: false
+      name: "external-dns"
     aws:
       iam:
         customRoleName: "{{ $.Values.aws.iam.customRoleName }}"
