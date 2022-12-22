@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update `net-expoter` to use AWS NTP sever.
+
 ## [0.12.4] - 2022-12-19
 
 ### Changed
