@@ -22,6 +22,11 @@ userConfig:
               operator: Exists
             - key: CriticalAddonsOnly
               operator: Exists
+  netExporter:
+    configMap:
+      values: |
+        NetExporter:
+          NTPServers: 169.254.169.123
 
 apps:
   aws-ebs-csi-driver:
