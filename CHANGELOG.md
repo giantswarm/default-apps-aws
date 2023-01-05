@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update `net-expoter` to use AWS NTP sever.
+- Bump node-exporter-app to v1.14.1
 
 ## [0.12.4] - 2022-12-19
 
