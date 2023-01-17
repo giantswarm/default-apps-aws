@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add configmap for external-dns, enabling IRSA
+
 ### Changed
 
 - Update `observability-bundle` from `0.1.8` to `0.1.9`
