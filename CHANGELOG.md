@@ -11,6 +11,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add configmap for external-dns, enabling IRSA
 
+## [0.14.0] - 2023-01-11
+
+### Changed
+
+- Update `node-exporter` to `1.15.0`
+
+## [0.13.0] - 2023-01-06
+
+### Changed
+
+- Update `net-expoter` to use AWS NTP sever.
+- Bump node-exporter-app to v1.14.1
+
+## [0.12.4] - 2022-12-19
+
+### Changed
+
+- Update `observability-bundle` from `0.1.4` to `0.1.8`
+
 ## [0.12.3] - 2022-12-08
 
 ### Fixed
@@ -166,7 +185,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.12.3...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.14.0...HEAD
+[0.14.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.13.0...v0.14.0
+[0.13.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.12.4...v0.13.0
+[0.12.4]: https://github.com/giantswarm/default-apps-aws/compare/v0.12.3...v0.12.4
 [0.12.3]: https://github.com/giantswarm/default-apps-aws/compare/v0.12.2...v0.12.3
 [0.12.2]: https://github.com/giantswarm/default-apps-aws/compare/v0.12.1...v0.12.2
 [0.12.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.12.0...v0.12.1
