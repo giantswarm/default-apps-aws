@@ -554,19 +554,6 @@
                 }
             }
         },
-        "aws": {
-            "type": "object",
-            "properties": {
-                "iam": {
-                    "type": "object",
-                    "properties": {
-                        "customRoleName": {
-                            "type": "string"
-                        }
-                    }
-                }
-            }
-        },
         "clusterName": {
             "type": "string"
         },

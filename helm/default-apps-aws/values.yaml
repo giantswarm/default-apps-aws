@@ -1,19 +1,11 @@
 clusterName: ""
 organization: ""
-aws:
-  iam:
-    customRoleName: ""
 
 userConfig:
   externalDns:
     configMap:
       values: |
-        serviceAccount:
-          create: false
-          name: "external-dns"
         aws:
-          iam:
-            customRoleName: "{{ .Values.aws.iam.customRoleName }}"
           irsa: "true"
   cilium:
     configMap:
