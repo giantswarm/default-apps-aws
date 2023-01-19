@@ -45,7 +45,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-ebs-csi-driver-app
-    version: 2.19.0
+    version: 2.20.0
   aws-pod-identity-webhook:
     appName: aws-pod-identity-webhook
     chartName: aws-pod-identity-webhook
