@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.16.0] - 2023-01-24
 
+### Changed
+
+- Bumped `external-dns` to `v2.23.2`
+- Bumped `aws-ebs-csi-driver-app` to `v2.20.0`
+
+### Added
+
+- Add mention to e2e pipelines in README
+
 ## [0.15.0] - 2023-01-18
 
 ### Added
