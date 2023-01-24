@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.16.0] - 2023-01-24
+
+### Changed
+
+- Bumped `external-dns` to `v2.23.2`
+- Bumped `aws-ebs-csi-driver-app` to `v2.20.0`
+
+### Added
+
+- Add mention to e2e pipelines in README
+
 ## [0.15.0] - 2023-01-18
 
 ### Added
@@ -191,7 +202,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.15.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.16.0...HEAD
+[0.16.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.15.0...v0.16.0
 [0.15.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.14.0...v0.15.0
 [0.14.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.13.0...v0.14.0
 [0.13.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.12.4...v0.13.0
