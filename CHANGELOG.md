@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.19.1] - 2023-02-17
+
 ### Changed
 
 - Bumped `aws-pod-identity-webhook` to `v1.6.2`
@@ -224,7 +226,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.19.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.19.1...HEAD
+[0.19.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.19.0...v0.19.1
 [0.19.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.18.0...v0.19.0
 [0.18.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.17.0...v0.18.0
 [0.17.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.16.0...v0.17.0
