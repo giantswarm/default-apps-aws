@@ -93,7 +93,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 2.18.2
+    version: 2.20.0
   coreDNS:
     appName: coredns
     chartName: coredns-app
