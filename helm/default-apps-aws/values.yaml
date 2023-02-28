@@ -2,6 +2,12 @@ clusterName: ""
 organization: ""
 
 userConfig:
+  certManager:
+    configMap:
+      values: |
+        controller:
+          aws:
+            irsa: "true"
   externalDns:
     configMap:
       values: |
