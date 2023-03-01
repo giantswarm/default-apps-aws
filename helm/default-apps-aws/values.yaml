@@ -105,7 +105,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/coredns-app
-    version: 1.13.0
+    version: 1.14.2
   cilium:
     appName: cilium
     chartName: cilium
