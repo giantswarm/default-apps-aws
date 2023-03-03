@@ -32,6 +32,12 @@ userConfig:
       values: |
         NetExporter:
           NTPServers: 169.254.169.123
+  observabilityBundle:
+    configMap:
+      values: |
+        apps:
+          promtail-app:
+            enabled: false
 
 apps:
   aws-ebs-csi-driver:
@@ -221,7 +227,7 @@ apps:
     clusterValues:
       configMap: true
       secret: false
-    forceUpgrade: false
+    forceUpgrade: true
     inCluster: true
     namespace: kube-system
     # used by renovate

@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Add `promtail` enabling/disabling to `observability-bundle`
+
 ## [0.19.1] - 2023-02-17
 
 ### Changed
