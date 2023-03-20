@@ -29,6 +29,12 @@ userConfig:
       values: |
         NetExporter:
           NTPServers: 169.254.169.123
+  vpa:
+    configMap:
+      values: |
+        vertical-pod-autoscaler:
+          global:
+            imageRegistry: giantswarm-registry.cn-shanghai.cr.aliyuncs.com
 
 apps:
   aws-ebs-csi-driver:
@@ -54,7 +60,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-pod-identity-webhook
-    version: 1.6.3
+    version: 1.7.0
   capi-node-labeler:
     appName: capi-node-labeler
     chartName: capi-node-labeler
@@ -90,7 +96,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 2.20.0
+    version: 2.20.2
   coreDNS:
     appName: coredns
     chartName: coredns-app
