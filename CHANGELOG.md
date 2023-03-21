@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.21.0] - 2023-03-21
+
+### Changed
+
+- Bumped `aws-pod-identity-webhook` to `v1.7.0`
+- Bumped `cert-manager-app` to `v2.20.2`
+
 ## [0.20.0] - 2023-03-09
 
 ### Changed
@@ -119,7 +126,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Bumped external-dns to v2.18.0.
-- Bumped kiam to v2.6.0. 
+- Bumped kiam to v2.6.0.
 - Bumped cert-manager to v2.18.0.
 - Configured external-dns, kiam and cert-manager for proxy.
 
@@ -232,7 +239,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.20.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.21.0...HEAD
+[0.21.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.20.0...v0.21.0
 [0.20.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.19.1...v0.20.0
 [0.19.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.19.0...v0.19.1
 [0.19.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.18.0...v0.19.0
