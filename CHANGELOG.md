@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Bump `vertical-pod-autoscaler-app` to 3.3.0
+
 ## [0.21.1] - 2023-03-21
 
 Re-release because v0.21.0 artifact did not get produced.
