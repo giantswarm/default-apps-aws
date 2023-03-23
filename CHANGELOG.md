@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Make cert-manager use only recursive nameservers for DNS01 solver. The public, authoritative ones cannot be reached directly from private clusters.
+
 ## [0.23.2] - 2023-03-24
 
 ### Fixed
