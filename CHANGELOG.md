@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.23.1] - 2023-03-23
+
 ### Changed
 
 - Bump `external-dns` to 2.34.2
@@ -263,7 +265,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.23.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.23.1...HEAD
+[0.23.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.23.0...v0.23.1
 [0.23.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.21.1...v0.22.0
 [0.21.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.21.0...v0.21.1
