@@ -114,7 +114,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cilium-app
-    version: 0.8.0
+    version: 0.9.0
   externalDns:
     appName: external-dns
     chartName: external-dns-app
