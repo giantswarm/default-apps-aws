@@ -90,7 +90,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 2.20.2
+    version: 2.20.3
   coreDNS:
     appName: coredns
     chartName: coredns-app
@@ -126,7 +126,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.33.0
+    version: 2.34.1
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
@@ -212,4 +212,4 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 0.2.0
+    version: 0.3.0
