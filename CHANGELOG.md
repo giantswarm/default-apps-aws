@@ -7,11 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Cilium `k8sServicePort` value must now be a string according to the values schema
+
 ## [0.23.1] - 2023-03-23
 
 ### Changed
 
 - Bump `external-dns` to 2.34.2
+- Bump `cilium` to 0.9.0
 
 ## [0.23.0] - 2023-03-23
 

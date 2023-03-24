@@ -13,7 +13,7 @@ userConfig:
         ipam:
           mode: kubernetes
         k8sServiceHost: api.{{ .Values.baseDomain }}
-        k8sServicePort: 6443
+        k8sServicePort: "6443"
         kubeProxyReplacement: strict
         defaultPolicies:
           enabled: true
