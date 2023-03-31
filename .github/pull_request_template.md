@@ -8,7 +8,7 @@
 ### Trigger e2e tests
 
 <!--
-We currently have two different pipelines to test both cluster creation and cluster upgrades. You can trigger these pipelines by writing these commands in a pull request comment or description 
+We currently have two different pipelines to test both cluster creation and cluster upgrades. You can trigger these pipelines by writing these commands in a pull request comment or description
 - `/test create` : this will trigger the `create-cluster-capi-pure` pipeline.
 - `/test upgrade` : this will trigger the `upgrade-cluster-capi-pure` pipeline.
 
@@ -20,3 +20,4 @@ If for some reason you want to skip the e2e tests, remove the following lines.
 
 /test create
 /test upgrade
+/run cluster-test-suites
