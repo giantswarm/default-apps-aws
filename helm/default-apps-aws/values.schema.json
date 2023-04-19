@@ -529,6 +529,19 @@
         "userConfig": {
             "type": "object",
             "properties": {
+                "certManager": {
+                    "type": "object",
+                    "properties": {
+                        "configMap": {
+                            "type": "object",
+                            "properties": {
+                                "values": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
                 "cilium": {
                     "type": "object",
                     "properties": {
@@ -543,6 +556,19 @@
                     }
                 },
                 "externalDns": {
+                    "type": "object",
+                    "properties": {
+                        "configMap": {
+                            "type": "object",
+                            "properties": {
+                                "values": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "netExporter": {
                     "type": "object",
                     "properties": {
                         "configMap": {
