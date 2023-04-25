@@ -61,7 +61,7 @@ apps:
   aws-ebs-csi-driver:
     appName: aws-ebs-csi-driver
     chartName: aws-ebs-csi-driver-app
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
       secret: true
@@ -69,7 +69,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-ebs-csi-driver-app
-    version: 2.21.0
+    version: 2.21.0-b031a7569aae1c84ed9447f7b16dbfd935ed9e54
   aws-pod-identity-webhook:
     appName: aws-pod-identity-webhook
     chartName: aws-pod-identity-webhook
