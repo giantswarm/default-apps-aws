@@ -46,6 +46,18 @@ userConfig:
           NTPServers: 169.254.169.123
 
 apps:
+  aws-cloud-controller-manager:
+    appName: aws-cloud-controller-manager
+    chartName: aws-cloud-controller-manager-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: false
+    namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/aws-cloud-controller-manager-app
+    version: 2.21.0
   aws-ebs-csi-driver:
     appName: aws-ebs-csi-driver
     chartName: aws-ebs-csi-driver-app
