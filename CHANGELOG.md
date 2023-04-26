@@ -13,15 +13,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `aws-cloud-controller-manager-app`.
 
+### Fixed
+
+- Fix cert-manager config not being used by mistake (`--dns01-recursive-nameservers-only` argument which is relevant in private clusters)
+
 ## [0.25.0] - 2023-04-25
 
 ### Changed
 
 - Bump `observability-bundle` to 0.4.2
-
-### Fixed
-
-- Fix cert-manager config not being used by mistake (`--dns01-recursive-nameservers-only` argument which is relevant in private clusters)
 
 ### Removed
 
