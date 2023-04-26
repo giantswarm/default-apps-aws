@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Bump `observability-bundle` to 0.4.2
 
+### Fixed
+
+- Fix cert-manager config not being used by mistake (`--dns01-recursive-nameservers-only` argument which is relevant in private clusters)
+
 ### Removed
 
 - Remove kube-state-metrics app as it is now included in the observability-bundle.
