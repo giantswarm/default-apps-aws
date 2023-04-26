@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.27.0] - 2023-04-26
+
 ### Fixed
 
 - Fix cert-manager config not being used by mistake (`--dns01-recursive-nameservers-only` argument which is relevant in private clusters)
@@ -298,7 +300,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.26.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.27.0...HEAD
+[0.27.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.26.0...v0.27.0
 [0.26.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.25.0...v0.26.0
 [0.25.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.24.0...v0.25.0
 [0.24.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.23.2...v0.24.0
