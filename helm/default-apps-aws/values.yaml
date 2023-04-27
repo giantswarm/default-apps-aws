@@ -63,7 +63,7 @@ apps:
   aws-ebs-csi-driver:
     appName: aws-ebs-csi-driver
     chartName: aws-ebs-csi-driver-app
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: true
       secret: true
