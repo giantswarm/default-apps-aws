@@ -7,11 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix catalog for `aws-ebs-csi-driver`.
+
 ## [0.27.0] - 2023-04-26
 
 ### Fixed
 
-- Fix cert-manager config not being used by mistake (`--dns01-recursive-nameservers-only` argument which is relevant in private clusters)
+- Fix cert-manager config not being used by mistake (`--dns01-recursive-nameservers-only` argument which is relevant in private clusters).
 
 ## [0.26.0] - 2023-04-26
 
