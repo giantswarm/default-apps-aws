@@ -24,23 +24,6 @@ userConfig:
       values: |
         aws:
           irsa: "true"
-  cilium:
-    configMap:
-      values: |
-        ipam:
-          mode: kubernetes
-        k8sServiceHost: api.{{ .Values.baseDomain }}
-        k8sServicePort: "6443"
-        kubeProxyReplacement: strict
-        defaultPolicies:
-          enabled: true
-          tolerations:
-            - effect: NoSchedule
-              operator: Exists
-            - effect: NoExecute
-              operator: Exists
-            - key: CriticalAddonsOnly
-              operator: Exists
   netExporter:
     configMap:
       values: |
@@ -48,42 +31,6 @@ userConfig:
           NTPServers: 169.254.169.123
 
 apps:
-  aws-cloud-controller-manager:
-    appName: aws-cloud-controller-manager
-    chartName: aws-cloud-controller-manager-app
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: true
-    forceUpgrade: false
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/aws-cloud-controller-manager-app
-    version: v1.24.1-gs3
-  aws-ebs-csi-driver:
-    appName: aws-ebs-csi-driver
-    chartName: aws-ebs-csi-driver-app
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: true
-    forceUpgrade: false
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/aws-ebs-csi-driver-app
-    version: 2.21.1
-  aws-pod-identity-webhook:
-    appName: aws-pod-identity-webhook
-    chartName: aws-pod-identity-webhook
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: false
-    forceUpgrade: true
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/aws-pod-identity-webhook
-    version: 1.8.0
   capi-node-labeler:
     appName: capi-node-labeler
     chartName: capi-node-labeler
@@ -120,30 +67,6 @@ apps:
     # used by renovate
     # repo: giantswarm/cert-manager-app
     version: 2.21.0
-  coreDNS:
-    appName: coredns
-    chartName: coredns-app
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: false
-    forceUpgrade: true
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/coredns-app
-    version: 1.15.2
-  cilium:
-    appName: cilium
-    chartName: cilium
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: false
-    forceUpgrade: true
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/cilium-app
-    version: 0.9.3
   externalDns:
     appName: external-dns
     chartName: external-dns-app

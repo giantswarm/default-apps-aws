@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+
+- Removed `coredns`.
+- Removed `cilium`.
+- Removed `aws-cloud-controller-manager`.
+- Removed `aws-ebs-csi-driver`.
+- Removed `aws-pod-identity-webhook`.
+
 ## [0.28.0] - 2023-05-02
 
 ### Fixed
