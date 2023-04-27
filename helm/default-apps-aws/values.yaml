@@ -76,6 +76,7 @@ apps:
     appName: aws-pod-identity-webhook
     chartName: aws-pod-identity-webhook
     catalog: default
+    dependsOn: cilium
     clusterValues:
       configMap: true
       secret: false
@@ -100,6 +101,7 @@ apps:
     appName: cert-exporter
     chartName: cert-exporter
     catalog: default
+    dependsOn: observability-bundle
     clusterValues:
       configMap: true
       secret: false
@@ -148,6 +150,7 @@ apps:
     appName: external-dns
     chartName: external-dns-app
     catalog: default
+    dependsOn: cilium
     clusterValues:
       configMap: true
       secret: true
@@ -160,6 +163,7 @@ apps:
     appName: metrics-server
     chartName: metrics-server-app
     catalog: default
+    dependsOn: observability-bundle
     clusterValues:
       configMap: true
       secret: false
@@ -172,6 +176,7 @@ apps:
     appName: net-exporter
     chartName: net-exporter
     catalog: default
+    dependsOn: observability-bundle
     clusterValues:
       configMap: true
       secret: false
@@ -184,6 +189,7 @@ apps:
     appName: node-exporter
     chartName: node-exporter-app
     catalog: default
+    dependsOn: observability-bundle
     clusterValues:
       configMap: true
       secret: false
@@ -209,6 +215,7 @@ apps:
     appName: vertical-pod-autoscaler-crd
     chartName: vertical-pod-autoscaler-crd
     catalog: default
+    dependsOn: observability-bundle
     clusterValues:
       configMap: true
       secret: false
@@ -221,6 +228,7 @@ apps:
     appName: observability-bundle
     chartName: observability-bundle
     catalog: default
+    dependsOn: cilium
     clusterValues:
       configMap: true
       secret: false

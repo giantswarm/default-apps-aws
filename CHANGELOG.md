@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Add dependencies between apps to try to speed up cluster creation.
+
 ## [0.27.0] - 2023-04-26
 
 ### Fixed
