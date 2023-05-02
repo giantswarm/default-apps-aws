@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.28.0-rc1] - 2023-05-02
+
 ### Fixed
 
 - Fix catalog for `aws-ebs-csi-driver`.
@@ -304,7 +306,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.27.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.28.0-rc1...HEAD
+[0.28.0-rc1]: https://github.com/giantswarm/default-apps-aws/compare/v0.27.0...v0.28.0-rc1
 [0.27.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.26.0...v0.27.0
 [0.26.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.25.0...v0.26.0
 [0.25.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.24.0...v0.25.0
