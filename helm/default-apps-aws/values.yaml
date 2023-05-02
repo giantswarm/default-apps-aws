@@ -54,12 +54,12 @@ apps:
     catalog: default
     clusterValues:
       configMap: true
-      secret: false
+      secret: true
     forceUpgrade: false
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-cloud-controller-manager-app
-    version: v1.24.1-gs1
+    version: v1.24.1-gs3
   aws-ebs-csi-driver:
     appName: aws-ebs-csi-driver
     chartName: aws-ebs-csi-driver-app
