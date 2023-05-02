@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Breaking changes
+
+- Removed core components because they are moved to the `cluster-aws` app. Make sure to use at least `cluster-aws` release X.Y.Z when upgrading to this `default-apps-aws` version.
+
 ### Removed
 
 - Removed `coredns`.
