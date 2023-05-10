@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Bump `aws-cloud-controller-manager-app` to v1.24.1-gs4.
+
 ## [0.28.0] - 2023-05-02
 
 ### Fixed
