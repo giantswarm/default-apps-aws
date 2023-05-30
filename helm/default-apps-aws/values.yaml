@@ -31,6 +31,18 @@ userConfig:
           NTPServers: 169.254.169.123
 
 apps:
+  aws-pod-identity-webhook:
+    appName: aws-pod-identity-webhook
+    chartName: aws-pod-identity-webhook
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/aws-pod-identity-webhook
+    version: 1.9.0
   capi-node-labeler:
     appName: capi-node-labeler
     chartName: capi-node-labeler
