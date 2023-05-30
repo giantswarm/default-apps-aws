@@ -66,7 +66,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-exporter
-    version: 2.4.0
+    version: 2.5.1
   certManager:
     appName: cert-manager
     chartName: cert-manager-app
@@ -90,7 +90,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.35.1
+    version: 2.37.0
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
@@ -102,7 +102,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/metrics-server-app
-    version: 2.1.0
+    version: 2.2.0
   netExporter:
     appName: net-exporter
     chartName: net-exporter
@@ -114,7 +114,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/net-exporter
-    version: 1.14.1
+    version: 1.15.0
   nodeExporter:
     appName: node-exporter
     chartName: node-exporter-app
@@ -126,7 +126,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/node-exporter-app
-    version: 1.15.0
+    version: 1.16.0
   vpa:
     appName: vertical-pod-autoscaler
     chartName: vertical-pod-autoscaler-app
@@ -164,4 +164,4 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 0.4.3
+    version: 0.5.1
