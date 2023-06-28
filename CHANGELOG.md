@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed `aws-ebs-csi-driver`.
 - Removed `vertical-pod-autoscaler-crd`.
 
+### Added
+
+- Add `etcd-kubernetes-resources-count-exporter`.
+
 ## [0.29.0] - 2023-05-10
 
 ### Changed
