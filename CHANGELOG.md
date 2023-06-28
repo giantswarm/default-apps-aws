@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Breaking changes
 
-- Removed core components because they are moved to the `cluster-aws` app. Make sure to use at least `cluster-aws` release X.Y.Z when upgrading to this `default-apps-aws` version.
+- Removed core components because they are moved to the `cluster-aws` app. Make sure to use at least `cluster-aws` release 0.35.0 when upgrading to this `default-apps-aws` version.
 
 ### Removed
 
@@ -17,7 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed `cilium`.
 - Removed `aws-cloud-controller-manager`.
 - Removed `aws-ebs-csi-driver`.
-- Removed `aws-pod-identity-webhook`.
 - Removed `vertical-pod-autoscaler-crd`.
 
 ## [0.29.0] - 2023-05-10
