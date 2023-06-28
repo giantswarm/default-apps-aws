@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Breaking changes
+
+- Removed core components because they are moved to the `cluster-aws` app. Make sure to use at least `cluster-aws` release 0.35.0 when upgrading to this `default-apps-aws` version.
+
+### Removed
+
+- Removed `coredns`.
+- Removed `cilium`.
+- Removed `aws-cloud-controller-manager`.
+- Removed `aws-ebs-csi-driver`.
+- Removed `vertical-pod-autoscaler-crd`.
+
 ### Added
 
 - Add `etcd-kubernetes-resources-count-exporter`.

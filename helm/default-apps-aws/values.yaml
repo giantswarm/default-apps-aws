@@ -24,23 +24,6 @@ userConfig:
       values: |
         aws:
           irsa: "true"
-  cilium:
-    configMap:
-      values: |
-        ipam:
-          mode: kubernetes
-        k8sServiceHost: api.{{ .Values.baseDomain }}
-        k8sServicePort: "6443"
-        kubeProxyReplacement: strict
-        defaultPolicies:
-          enabled: true
-          tolerations:
-            - effect: NoSchedule
-              operator: Exists
-            - effect: NoExecute
-              operator: Exists
-            - key: CriticalAddonsOnly
-              operator: Exists
   netExporter:
     configMap:
       values: |
@@ -56,30 +39,6 @@ userConfig:
           keypath: "/certs/server.key"
 
 apps:
-  aws-cloud-controller-manager:
-    appName: aws-cloud-controller-manager
-    chartName: aws-cloud-controller-manager-app
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: true
-    forceUpgrade: false
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/aws-cloud-controller-manager-app
-    version: 1.24.1-gs8
-  aws-ebs-csi-driver:
-    appName: aws-ebs-csi-driver
-    chartName: aws-ebs-csi-driver-app
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: true
-    forceUpgrade: false
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/aws-ebs-csi-driver-app
-    version: 2.24.0
   aws-pod-identity-webhook:
     appName: aws-pod-identity-webhook
     chartName: aws-pod-identity-webhook
@@ -128,30 +87,6 @@ apps:
     # used by renovate
     # repo: giantswarm/cert-manager-app
     version: 2.23.2
-  coreDNS:
-    appName: coredns
-    chartName: coredns-app
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: false
-    forceUpgrade: true
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/coredns-app
-    version: 1.17.0
-  cilium:
-    appName: cilium
-    chartName: cilium
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: false
-    forceUpgrade: true
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/cilium-app
-    version: 0.10.0
   externalDns:
     appName: external-dns
     chartName: external-dns-app
@@ -204,7 +139,7 @@ apps:
     appName: vertical-pod-autoscaler
     chartName: vertical-pod-autoscaler-app
     catalog: default
-    dependsOn: vertical-pod-autoscaler-crd
+    dependsOn: prometheus-operator-crd
     clusterValues:
       configMap: true
       secret: false
@@ -213,18 +148,6 @@ apps:
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
     version: 3.5.1
-  vpaCRD:
-    appName: vertical-pod-autoscaler-crd
-    chartName: vertical-pod-autoscaler-crd
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: false
-    forceUpgrade: false
-    namespace: kube-system
-    # used by renovate
-    # repo: giantswarm/vertical-pod-autoscaler-crd
-    version: 2.0.1
   observabilityBundle:
     appName: observability-bundle
     chartName: observability-bundle
