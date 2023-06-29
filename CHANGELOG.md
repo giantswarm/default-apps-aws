@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Change the etcd prefix for `etcd-kubernetes-resources-count-exporter`.
+
 ## [0.30.0] - 2023-06-28
 
 ### Breaking changes
