@@ -36,8 +36,22 @@ userConfig:
   externalDns:
     configMap:
       values: |
+        provider: aws
         aws:
           irsa: "true"
+          batchChangeInterval: null
+        serviceAccount:
+          annotations:
+            eks.amazonaws.com/role-arn: {{ .Values.clusterName }}-Route53Manager-Role
+        domainFilters:
+          - {{ .Values.baseDomain }}
+        txtOwnerId: giantswarm-io-external-dns
+        txtPrefix: {{ .Values.clusterName }}
+        annoationFilter: giantswarm.io/external-dns=managed
+        sources:
+          - service
+        extraArgs:
+          - "--aws-batch-change-interval=10s"
   netExporter:
     configMap:
       values: |
