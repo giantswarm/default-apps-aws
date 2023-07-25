@@ -5,6 +5,7 @@ userConfig:
   certManager:
     configMap:
       values: |
+        # cert-manager-app v2.x.x
         controller:
           extraArgs:
             # cert-manager's DNS01 solver by default tries to reach authoritative nameservers directly, using
@@ -19,6 +20,19 @@ userConfig:
             #
             # For public clusters, this setting should have no effect, as they can use the HTTP01 solver.
             - --dns01-recursive-nameservers-only
+        # cert-manager-app v3.x.x
+        # cert-manager's DNS01 solver by default tries to reach authoritative nameservers directly, using
+        # their public IPs. Since those are not reachable from private clusters, we instead rely on the
+        # recursive nameserver (for AWS, that's normally the default nameserver requested in EC2 instances).
+        #
+        # Without this, we get an error like
+        #
+        #   cert-manager/challenges "msg"="propagation check failed" "error"="dial tcp 205.251.194.0:53: i/o timeout"
+        #
+        # where the IP is an AWS nameserver, and DNS-over-TCP is attempted after UDP has failed before.
+        #
+        # For public clusters, this setting should have no effect, as they can use the HTTP01 solver.
+        dns01RecursiveNameserversOnly: true
   externalDns:
     configMap:
       values: |
