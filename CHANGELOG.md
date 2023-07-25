@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Change the etcd prefix for `etcd-kubernetes-resources-count-exporter`.
 - Update `cert-manager-app` values in preparation of v3.0.0 release.
+- Set `extenal-dns` configuration using explicit values.
 
 ## [0.30.0] - 2023-06-28
 
