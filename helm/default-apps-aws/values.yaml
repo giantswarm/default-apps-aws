@@ -47,7 +47,7 @@ userConfig:
           - {{ .Values.baseDomain }}
         txtOwnerId: giantswarm-io-external-dns
         txtPrefix: {{ .Values.clusterName }}
-        annoationFilter: giantswarm.io/external-dns=managed
+        annotationFilter: giantswarm.io/external-dns=managed
         sources:
           - service
         extraArgs:
