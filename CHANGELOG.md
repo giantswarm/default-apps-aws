@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `enabled` property to each app, whitch controls, if the app is deployed or not.
+
 ### Changed
 
 - Change the etcd prefix for `etcd-kubernetes-resources-count-exporter`.
