@@ -202,6 +202,19 @@ apps:
     # used by renovate
     # repo: giantswarm/observability-bundle
     version: 0.7.2
+  teleport-kube-agent:
+    appName: teleport-kube-agent
+    chartName: teleport-kube-agent-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: true
+    enabled: true
+    forceUpgrade: true
+    namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/teleport-kube-agent-app
+    version: 0.3.0
   etcdKubernetesResourceCountExporter:
     appName: etcd-kubernetes-resources-count-exporter
     chartName: etcd-kubernetes-resources-count-exporter
