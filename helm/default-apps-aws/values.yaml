@@ -204,7 +204,7 @@ apps:
     version: 0.7.2
   teleport-kube-agent:
     appName: teleport-kube-agent
-    chartName: teleport-kube-agent-app
+    chartName: teleport-kube-agent
     catalog: default
     clusterValues:
       configMap: true
