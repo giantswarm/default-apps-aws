@@ -209,7 +209,7 @@
                         }
                     }
                 },
-                "teleportKubeAgent": {
+                "teleport-kube-agent": {
                     "type": "object",
                     "properties": {
                         "appName": {
@@ -232,6 +232,19 @@
                                 }
                             }
                         },
+                        "extraConfigs": {
+                            "type": "array",
+                            "items": {
+                                "properties": {
+                                    "kind": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },                        
                         "forceUpgrade": {
                             "type": "boolean"
                         },
