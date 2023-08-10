@@ -115,7 +115,7 @@ apps:
     catalog: default
     enabled: true
     clusterValues:
-      configMap: true
+      configMap: trueport
       secret: true
     forceUpgrade: true
     namespace: kube-system
@@ -215,6 +215,16 @@ apps:
     # used by renovate
     # repo: giantswarm/teleport-kube-agent-app
     version: 0.3.0
+    # a list of extraConfigs for the App,
+    # It can be secret or configmap
+    # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
+    extraConfigs:
+      - kind: secret
+        name: "{{ $.Values.clusterName }}-teleport-join-token"
+        namespace: "{{ $.Release.Namespace }}"
+      - kind: configMap
+        name: "{{ $.Values.clusterName }}-teleport-kube-agent-config"
+        namespace: "{{ $.Release.Namespace }}"
   etcdKubernetesResourceCountExporter:
     appName: etcd-kubernetes-resources-count-exporter
     chartName: etcd-kubernetes-resources-count-exporter
