@@ -219,9 +219,6 @@ apps:
     # It can be secret or configmap
     # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
     extraConfigs:
-      - kind: secret
-        name: "{{ $.Values.clusterName }}-teleport-join-token"
-        namespace: "{{ $.Release.Namespace }}"
       - kind: configMap
         name: "{{ $.Values.clusterName }}-teleport-kube-agent-config"
         namespace: "{{ $.Release.Namespace }}"
