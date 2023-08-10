@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.32.0] - 2023-08-10
+
 ### Fixed
 
 - Add dependency from `aws-pod-identity-webhook` on `cert-manager` because otherwise the chart may be deployed without the required `Certificate` object
@@ -351,7 +353,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.31.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.32.0...HEAD
+[0.32.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.31.0...v0.32.0
 [0.31.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.30.0...v0.31.0
 [0.30.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.29.0...v0.30.0
 [0.29.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.28.0...v0.29.0
