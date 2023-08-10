@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Update `external-dns-app` to `v2.38.1`
+- Update `vertical-pod-autoscaler-app` to `v3.5.4`
+- Update `node-exporter-app` to `v1.17.1`
+- Update `etcd-kubernetes-resources-count-exporter` to `v1.4.0`
 - Add dependency from `aws-pod-identity-webhook` on `cert-manager` because otherwise the chart may be deployed without the required `Certificate` object
 
 ## [0.31.0] - 2023-08-07
