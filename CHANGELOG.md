@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Add dependency from `aws-pod-identity-webhook` on `cert-manager` because otherwise the chart may be deployed without the required `Certificate` object
+
 ## [0.31.0] - 2023-08-07
 
 ### Added
@@ -52,7 +56,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Add the `cluster-values` secret to the `aws-cloud-controller-manager` app, so it gets the proxy configuration. 
+- Add the `cluster-values` secret to the `aws-cloud-controller-manager` app, so it gets the proxy configuration.
 
 ## [0.27.0] - 2023-04-26
 
