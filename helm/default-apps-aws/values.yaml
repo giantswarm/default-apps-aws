@@ -115,7 +115,7 @@ apps:
     catalog: default
     enabled: true
     clusterValues:
-      configMap: trueport
+      configMap: true
       secret: true
     forceUpgrade: true
     namespace: kube-system
