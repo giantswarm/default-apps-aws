@@ -79,7 +79,6 @@ apps:
       secret: false
     dependsOn: cert-manager  # since aws-pod-identity-webhook installs a `Certificate` object
     enabled: true
-    forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-pod-identity-webhook
@@ -92,7 +91,6 @@ apps:
       configMap: true
       secret: false
     enabled: true
-    forceUpgrade: false
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/capi-node-labeler-app
@@ -105,7 +103,6 @@ apps:
       configMap: true
       secret: false
     enabled: true
-    forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-exporter
@@ -118,7 +115,6 @@ apps:
     clusterValues:
       configMap: true
       secret: true
-    forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
@@ -131,7 +127,6 @@ apps:
       configMap: true
       secret: true
     enabled: true
-    forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
@@ -144,7 +139,6 @@ apps:
       configMap: true
       secret: false
     enabled: true
-    forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/metrics-server-app
@@ -157,7 +151,6 @@ apps:
       configMap: true
       secret: false
     enabled: true
-    forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/net-exporter
@@ -170,7 +163,6 @@ apps:
       configMap: true
       secret: false
     enabled: true
-    forceUpgrade: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/node-exporter-app
@@ -184,7 +176,6 @@ apps:
       configMap: true
       secret: false
     enabled: true
-    forceUpgrade: false
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
@@ -197,7 +188,6 @@ apps:
       configMap: true
       secret: false
     enabled: true
-    forceUpgrade: false
     inCluster: true
     namespace: kube-system
     # used by renovate
@@ -211,7 +201,6 @@ apps:
       configMap: true
       secret: false
     enabled: true
-    forceUpgrade: false
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/etcd-kubernetes-resources-count-exporter
