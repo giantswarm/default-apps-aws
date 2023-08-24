@@ -33,6 +33,8 @@ userConfig:
         #
         # For public clusters, this setting should have no effect, as they can use the HTTP01 solver.
         dns01RecursiveNameserversOnly: true
+        ciliumNetworkPolicy:
+          enabled: false
   externalDns:
     configMap:
       values: |
