@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Don't use `--force` when installing/upgrading apps.
+- Enable cilium NetworkPolicies for `cert-manager-app`.
+
 ## [0.32.0] - 2023-08-10
 
 ### Fixed
