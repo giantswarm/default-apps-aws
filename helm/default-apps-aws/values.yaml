@@ -120,7 +120,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 3.1.0
+    version: 3.2.1
   externalDns:
     appName: external-dns
     chartName: external-dns-app
