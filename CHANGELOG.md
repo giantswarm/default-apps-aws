@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.33.0] - 2023-08-28
+
+### Changed
+
+- Don't use `--force` when installing/upgrading apps.
+- Enable cilium NetworkPolicies for `cert-manager-app`.
+
+## [0.32.0] - 2023-08-10
+
+### Fixed
+
+- Update `external-dns-app` to `v2.38.1`
+- Update `vertical-pod-autoscaler-app` to `v3.5.4`
+- Update `node-exporter-app` to `v1.17.1`
+- Update `etcd-kubernetes-resources-count-exporter` to `v1.4.0`
+- Add dependency from `aws-pod-identity-webhook` on `cert-manager` because otherwise the chart may be deployed without the required `Certificate` object
+
+## [0.31.0] - 2023-08-07
+
 ### Added
 
 - Add `enabled` property to each app, which controls, if the app is deployed or not.
@@ -51,7 +70,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Add the `cluster-values` secret to the `aws-cloud-controller-manager` app, so it gets the proxy configuration. 
+- Add the `cluster-values` secret to the `aws-cloud-controller-manager` app, so it gets the proxy configuration.
 
 ## [0.27.0] - 2023-04-26
 
@@ -346,7 +365,10 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.30.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.33.0...HEAD
+[0.33.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.32.0...v0.33.0
+[0.32.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.31.0...v0.32.0
+[0.31.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.30.0...v0.31.0
 [0.30.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.29.0...v0.30.0
 [0.29.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.28.0...v0.29.0
 [0.28.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.27.0...v0.28.0
