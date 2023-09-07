@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Add helm pre-install job that waits for `cilium` `HelmRelease` to be `Ready` so that default apps are only deployed after `cilium` is deployed.
+
 ## [0.33.0] - 2023-08-28
 
 ### Changed

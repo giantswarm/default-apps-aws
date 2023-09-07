@@ -1,0 +1,42 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: default-apps-wait-for-cni
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "labels.common" $ | nindent 4 }}
+  annotations:
+    helm.sh/hook: pre-install,pre-upgrade
+    helm.sh/hook-weight: "1"
+    helm.sh/hook-delete-policy: before-hook-creation,hook-succeeded
+spec:
+  backoffLimit: 50
+  template:
+    metadata:
+      labels:
+        {{- include "labels.common" $ | nindent 8 }}
+    spec:
+      restartPolicy: OnFailure
+      serviceAccountName: default-apps-wait-for-cni
+      priorityClassName: system-cluster-critical
+      containers:
+        - name: wait-crds
+          image: "quay.io/giantswarm/docker-kubectl:1.24.4"
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 100m
+              memory: 50Mi
+            limits:
+              cpu: 200m
+              memory: 100Mi
+          securityContext:
+            readOnlyRootFilesystem: true
+            runAsUser: 1000
+            runAsNonRoot: true
+          command:
+            - sh
+          args:
+            - -c
+            - |
+              kubectl wait --for=condition=Ready -n {{ .Release.Namespace }} helmrelease/{{ .Values.clusterName }}-cilium
