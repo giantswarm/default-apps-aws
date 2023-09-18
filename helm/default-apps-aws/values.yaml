@@ -198,7 +198,7 @@ apps:
   teleport-kube-agent:
     appName: teleport-kube-agent
     chartName: teleport-kube-agent
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
       secret: true
