@@ -120,7 +120,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 3.2.1
+    version: 3.3.0
   externalDns:
     appName: external-dns
     chartName: external-dns-app
@@ -132,7 +132,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.38.1
+    version: 2.39.0
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
@@ -181,7 +181,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
-    version: 3.5.4
+    version: 4.0.0
   observabilityBundle:
     appName: observability-bundle
     chartName: observability-bundle
@@ -194,7 +194,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 0.7.2
+    version: 0.8.2
   teleport-kube-agent:
     appName: teleport-kube-agent
     chartName: teleport-kube-agent
