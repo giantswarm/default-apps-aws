@@ -181,7 +181,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
-    version: 4.0.0
+    version: 4.2.0
   observabilityBundle:
     appName: observability-bundle
     chartName: observability-bundle
