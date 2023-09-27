@@ -117,6 +117,7 @@ apps:
     clusterValues:
       configMap: true
       secret: true
+    dependsOn: prometheus-operator-crd
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
