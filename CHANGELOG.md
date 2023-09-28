@@ -9,8 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Bumped `cert-manager-app` to `v3.4.0`.
+- Add dependency from `cert-manager` on `prometheus-operator-crd` because it needs `ServiceMonitors`.
 - Drop usage of `clusterID` in favour of `clusterName`.
-- Bumped `cert-manager-app` to `v3.4.0`
 
 ## [0.33.0] - 2023-08-28
 
