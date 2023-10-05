@@ -84,7 +84,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-pod-identity-webhook
-    version: 1.11.1
+    version: 1.12.0
   capi-node-labeler:
     appName: capi-node-labeler
     chartName: capi-node-labeler
@@ -108,7 +108,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-exporter
-    version: 2.6.0
+    version: 2.7.0
   certManager:
     appName: cert-manager
     chartName: cert-manager-app
@@ -117,10 +117,24 @@ apps:
     clusterValues:
       configMap: true
       secret: true
+    dependsOn: prometheus-operator-crd
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 3.3.0
+    version: 3.4.0
+  chartOperatorExtensions:
+    appName: chart-operator-extensions
+    chartName: chart-operator-extensions
+    catalog: default
+    enabled: true
+    clusterValues:
+      configMap: false
+      secret: false
+    dependsOn: prometheus-operator-crd
+    namespace: giantswarm
+    # used by renovate
+    # repo: giantswarm/chart-operator-extensions
+    version: 1.1.1
   externalDns:
     appName: external-dns
     chartName: external-dns-app
@@ -132,7 +146,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.40.0
+    version: 2.42.0
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
@@ -156,7 +170,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/net-exporter
-    version: 1.17.1
+    version: 1.18.0
   nodeExporter:
     appName: node-exporter
     chartName: node-exporter-app
@@ -194,7 +208,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 0.8.2
+    version: 0.8.7
   teleport-kube-agent:
     appName: teleport-kube-agent
     chartName: teleport-kube-agent
@@ -226,4 +240,4 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/etcd-kubernetes-resources-count-exporter
-    version: 1.5.0
+    version: 1.6.0

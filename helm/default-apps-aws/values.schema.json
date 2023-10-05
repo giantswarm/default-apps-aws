@@ -28,6 +28,12 @@
                                 }
                             }
                         },
+                        "dependsOn": {
+                            "type": "string"
+                        },
+                        "enabled": {
+                            "type": "boolean"
+                        },
                         "namespace": {
                             "type": "string"
                         },
@@ -58,6 +64,9 @@
                                     "type": "boolean"
                                 }
                             }
+                        },
+                        "enabled": {
+                            "type": "boolean"
                         },
                         "namespace": {
                             "type": "string"
@@ -90,6 +99,9 @@
                                 }
                             }
                         },
+                        "enabled": {
+                            "type": "boolean"
+                        },
                         "namespace": {
                             "type": "string"
                         },
@@ -120,6 +132,49 @@
                                     "type": "boolean"
                                 }
                             }
+                        },
+                        "dependsOn": {
+                            "type": "string"
+                        },
+                        "enabled": {
+                            "type": "boolean"
+                        },
+                        "namespace": {
+                            "type": "string"
+                        },
+                        "version": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "chartOperatorExtensions": {
+                    "type": "object",
+                    "properties": {
+                        "appName": {
+                            "type": "string"
+                        },
+                        "catalog": {
+                            "type": "string"
+                        },
+                        "chartName": {
+                            "type": "string"
+                        },
+                        "clusterValues": {
+                            "type": "object",
+                            "properties": {
+                                "configMap": {
+                                    "type": "boolean"
+                                },
+                                "secret": {
+                                    "type": "boolean"
+                                }
+                            }
+                        },
+                        "dependsOn": {
+                            "type": "string"
+                        },
+                        "enabled": {
+                            "type": "boolean"
                         },
                         "namespace": {
                             "type": "string"
@@ -152,6 +207,9 @@
                                 }
                             }
                         },
+                        "enabled": {
+                            "type": "boolean"
+                        },
                         "namespace": {
                             "type": "string"
                         },
@@ -182,6 +240,9 @@
                                     "type": "boolean"
                                 }
                             }
+                        },
+                        "enabled": {
+                            "type": "boolean"
                         },
                         "namespace": {
                             "type": "string"
@@ -261,6 +322,9 @@
                                 }
                             }
                         },
+                        "enabled": {
+                            "type": "boolean"
+                        },
                         "namespace": {
                             "type": "string"
                         },
@@ -291,6 +355,9 @@
                                     "type": "boolean"
                                 }
                             }
+                        },
+                        "enabled": {
+                            "type": "boolean"
                         },
                         "namespace": {
                             "type": "string"
@@ -323,6 +390,9 @@
                                 }
                             }
                         },
+                        "enabled": {
+                            "type": "boolean"
+                        },
                         "namespace": {
                             "type": "string"
                         },
@@ -353,6 +423,9 @@
                                     "type": "boolean"
                                 }
                             }
+                        },
+                        "enabled": {
+                            "type": "boolean"
                         },
                         "inCluster": {
                             "type": "boolean"
@@ -390,6 +463,9 @@
                         },
                         "dependsOn": {
                             "type": "string"
+                        },
+                        "enabled": {
+                            "type": "boolean"
                         },
                         "namespace": {
                             "type": "string"

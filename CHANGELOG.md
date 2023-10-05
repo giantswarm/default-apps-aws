@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added `chart-operator-extension` version `v1.1.1` that contains e.g. `ServiceMonitors` for `chart-operator`.
+
+## [0.34.0] - 2023-09-28
+
+### Changed
+
+- Bumped `cert-manager-app` to `v3.4.0`.
+- Add dependency from `cert-manager` on `prometheus-operator-crd` because it needs `ServiceMonitors`.
+- Drop usage of `clusterID` in favour of `clusterName`.
+
 ## [0.33.0] - 2023-08-28
 
 ### Changed
@@ -365,7 +377,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.33.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.34.0...HEAD
+[0.34.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.33.0...v0.34.0
 [0.33.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.32.0...v0.33.0
 [0.32.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.31.0...v0.32.0
 [0.31.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.30.0...v0.31.0
