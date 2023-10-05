@@ -112,7 +112,7 @@ apps:
   certManager:
     appName: cert-manager
     chartName: cert-manager-app
-    catalog: default
+    catalog: default-test
     enabled: true
     clusterValues:
       configMap: true
@@ -121,7 +121,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 3.4.0
+    version: 3.4.0-425abf44d6b01e82a42c76da7c2930965042cd7b
   chartOperatorExtensions:
     appName: chart-operator-extensions
     chartName: chart-operator-extensions
