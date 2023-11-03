@@ -140,7 +140,7 @@ apps:
     chartName: cluster-autoscaler-app
     catalog: default
     clusterValues:
-      configMap: true
+      configMap: false
       secret: false
     enabled: true
     namespace: kube-system
