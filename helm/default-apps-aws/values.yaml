@@ -35,6 +35,12 @@ userConfig:
         dns01RecursiveNameserversOnly: true
         ciliumNetworkPolicy:
           enabled: true
+  cluster-autoscaler:
+    configMap:
+      values: |
+        serviceAccount:
+          annotations:
+            eks.amazonaws.com/role-arn: {{ .Values.clusterName }}-cluster-autoscaler-role
   externalDns:
     configMap:
       values: |
@@ -146,7 +152,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cluster-autoscaler-app
-    version: 1.27.3-gs2
+    version: 1.27.3-gs3
   externalDns:
     appName: external-dns
     chartName: external-dns-app
