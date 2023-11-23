@@ -63,6 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `enabled` property to each app, which controls, if the app is deployed or not.
+- Add `teleport-kube-agent-app`
 
 ### Changed
 
