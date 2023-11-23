@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.38.0] - 2023-11-16
+
+## [0.37.0] - 2023-11-10
+
+### Changed
+
+- IRSA for cluster-autoscaler.
+
+## [0.36.1] - 2023-11-10
+
+### Changed
+
+- Update `cert-manager` to `3.5.2`.
+
+## [0.36.0] - 2023-11-07
+
+### Added
+
+- Add `cluster-autoscaler`.
+
+## [0.35.0] - 2023-11-02
+
 ### Added
 
 - Added `chart-operator-extension` version `v1.1.1` that contains e.g. `ServiceMonitors` for `chart-operator`.
@@ -377,7 +399,12 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.34.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.38.0...HEAD
+[0.38.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.37.0...v0.38.0
+[0.37.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.36.1...v0.37.0
+[0.36.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.36.0...v0.36.1
+[0.36.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.35.0...v0.36.0
+[0.35.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.34.0...v0.35.0
 [0.34.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.33.0...v0.34.0
 [0.33.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.32.0...v0.33.0
 [0.32.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.31.0...v0.32.0
