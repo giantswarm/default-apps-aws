@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Shortened `etcd-kubernetes-resources-count-exporter` appName to `etcd-k8s-res-count-exporter`.
+- Shortened `etcd-kubernetes-resources-count-exporter` appName to `etcd-k8s-res-count-exporter` to prevent issues with longer cluster names.
 
 ## [0.39.0] - 2023-11-23
 
