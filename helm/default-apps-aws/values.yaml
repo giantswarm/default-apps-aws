@@ -50,7 +50,7 @@ userConfig:
           batchChangeInterval: null
         serviceAccount:
           annotations:
-            eks.amazonaws.com/role-arn: {{ .Values.clusterName }}-Route53Manager-Role
+            eks.amazonaws.com/role-arn: {{ .Values.clusterName }}-external-dns
         domainFilters:
           - {{ .Values.baseDomain }}
         txtOwnerId: giantswarm-io-external-dns
@@ -156,7 +156,7 @@ apps:
   externalDns:
     appName: external-dns-bundle
     chartName: external-dns-bundle
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: true
       secret: true
@@ -165,7 +165,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-bundle
-    version: 0.1.0-8ab594fa0e136e1717b8a7598451c6972429ac22
+    version: 0.1.1
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
