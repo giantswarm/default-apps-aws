@@ -493,7 +493,7 @@
                             "type": "object",
                             "properties": {
                                 "values": {
-                                    "type": "string"
+                                    "type": "object"
                                 }
                             }
                         }
@@ -506,7 +506,7 @@
                             "type": "object",
                             "properties": {
                                 "values": {
-                                    "type": "string"
+                                    "type": "object"
                                 }
                             }
                         }
@@ -519,7 +519,7 @@
                             "type": "object",
                             "properties": {
                                 "values": {
-                                    "type": "string"
+                                    "type": "object"
                                 }
                             }
                         }
@@ -532,7 +532,7 @@
                             "type": "object",
                             "properties": {
                                 "values": {
-                                    "type": "string"
+                                    "type": "object"
                                 }
                             }
                         }

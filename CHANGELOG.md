@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Breaking changes
+
+Now we use a YAML object for the apps configuration instead of a string field.
+If you were passing custom values to the apps then you need to pass them as individual properties now.
+For example, this
+
+```yaml
+userConfig:
+  certManager:
+    configMap:
+      values: |
+        controller:
+          defaultIssuer:
+            name: private-giantswarm
+```
+
+Needs to be changed to this
+
+```yaml
+userConfig:
+  certManager:
+    configMap:
+      values:
+        controller:
+          defaultIssuer:
+            name: private-giantswarm
+```
+
+### Changed
+
+- Use a YAML object for the apps configuration.
+
 ## [0.40.0] - 2023-11-27
 
 ### Fixed

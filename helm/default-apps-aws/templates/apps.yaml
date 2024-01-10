@@ -83,7 +83,8 @@ metadata:
   name: {{ $.Values.clusterName }}-{{ $appName }}-user-values
   namespace: {{ $.Release.Namespace }}
 data:
-  {{- (tpl (.configMap | toYaml | toString) $) | nindent 2 }}
+  values: |
+  {{- (tpl (.configMap.values | toYaml | toString) $) | nindent 4 }}
 {{- end }}
 {{- if .secret }}
 ---
