@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Bump observability-bundle to 1.0.0. Beware that this version contains breaking changes
+- Enable `ciliumNetworkPolicy` for apps that support it.
 
 ## [0.40.0] - 2023-11-27
 
