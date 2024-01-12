@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.41.0] - 2024-01-12
+
 ### Changed
 
 - Bump observability-bundle to 1.0.0. Beware that this version contains breaking changes.
@@ -412,7 +414,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.40.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.41.0...HEAD
+[0.41.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.40.0...v0.41.0
 [0.40.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.39.0...v0.40.0
 [0.39.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.38.0...v0.39.0
 [0.38.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.37.0...v0.38.0
