@@ -4,7 +4,7 @@ organization: ""
 userConfig:
   certManager:
     configMap:
-      values: |
+      values:
         # cert-manager-app v2.x.x
         controller:
           extraArgs:
@@ -37,24 +37,24 @@ userConfig:
           enabled: true
   cluster-autoscaler:
     configMap:
-      values: |
+      values:
         serviceAccount:
           annotations:
-            eks.amazonaws.com/role-arn: {{ .Values.clusterName }}-cluster-autoscaler-role
+            eks.amazonaws.com/role-arn: "{{ .Values.clusterName }}-cluster-autoscaler-role"
   externalDns:
     configMap:
-      values: |
+      values:
         provider: aws
         aws:
           irsa: "true"
           batchChangeInterval: null
         serviceAccount:
           annotations:
-            eks.amazonaws.com/role-arn: {{ .Values.clusterName }}-Route53Manager-Role
+            eks.amazonaws.com/role-arn: "{{ .Values.clusterName }}-Route53Manager-Role"
         domainFilters:
-          - {{ .Values.baseDomain }}
+          - "{{ .Values.baseDomain }}"
         txtOwnerId: giantswarm-io-external-dns
-        txtPrefix: {{ .Values.clusterName }}
+        txtPrefix: "{{ .Values.clusterName }}"
         annotationFilter: giantswarm.io/external-dns=managed
         sources:
           - service
@@ -64,14 +64,14 @@ userConfig:
           enabled: true
   netExporter:
     configMap:
-      values: |
+      values:
         NetExporter:
           NTPServers: 169.254.169.123
         ciliumNetworkPolicy:
           enabled: true
   etcdKubernetesResourceCountExporter:
     configMap:
-      values: |
+      values:
         etcd:
           hostPath: "/etc/kubernetes/pki/etcd/"
           cacertpath: "/certs/ca.crt"
