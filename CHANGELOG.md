@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.42.0] - 2024-01-22
 
+### Changed
+
+- Enable `CiliumNetworkPolicy` for apps that support it
+
 ## [0.41.1] - 2024-01-17
 
 ### Fixed
@@ -21,7 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Bump observability-bundle to 1.0.0. Beware that this version contains breaking changes
 - Use a YAML object for the apps configuration, so that defaults are not overwritten when users pass custom values.
-- Enable `ciliumNetworkPolicy` for apps that support it.
 
 ## [0.40.0] - 2023-11-27
 
