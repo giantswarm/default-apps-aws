@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add security-bundle app 
+
 ## [0.42.0] - 2024-01-22
 
 ### Changed
