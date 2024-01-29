@@ -10,7 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Allow customization of the extraConfig priority.
-=======
 
 ## [0.44.0] - 2024-01-26
 
