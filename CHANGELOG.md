@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Bump `aws-pod-identity-webhook` to `v1.14.1`. Now has the correct `policy/v1` for the PodDisruptionBudget.
+- Bump `capi-node-labeler` to `v0.5.0`. Now supports PSS.
+
 ## [0.44.0] - 2024-01-26
 
 ## [0.43.0] - 2024-01-25
