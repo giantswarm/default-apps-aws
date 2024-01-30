@@ -275,8 +275,7 @@ apps:
     clusterValues:
       configMap: true
       secret: false
-    forceUpgrade: false
-    inCluster: true
+    enabled: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/security-bundle
