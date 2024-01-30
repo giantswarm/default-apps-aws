@@ -1,0 +1,7 @@
+apps:
+  certManager:
+    extraConfigs:
+    - kind: ConfigMap
+      name: cert-manager-cainjector
+      namespace: giantswarm
+      priority: 100
