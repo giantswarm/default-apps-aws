@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Allow customization of the extraConfig priority.
 
+## [0.45.0] - 2024-01-29
+
+### Changed
+
+- Bump `aws-pod-identity-webhook` to `v1.14.1`. Now has the correct `policy/v1` for the PodDisruptionBudget.
+- Bump `capi-node-labeler` to `v0.5.0`. Now supports PSS.
+
 ## [0.44.0] - 2024-01-26
 
 ## [0.43.0] - 2024-01-25
@@ -438,7 +445,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.44.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.0...HEAD
+[0.45.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.44.0...v0.45.0
 [0.44.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.43.0...v0.44.0
 [0.43.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.42.0...v0.43.0
 [0.42.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.41.1...v0.42.0
