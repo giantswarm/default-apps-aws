@@ -56,6 +56,9 @@ spec:
   - kind: {{ $extraConfig.kind }}
     name: {{ tpl $extraConfig.name $ }}
     namespace: {{ tpl $extraConfig.namespace $ }}
+    {{- if $extraConfig.priority }}
+    priotity: {{ $extraConfig.priority }}
+    {{- end}}
   {{- end }}
   {{- end }}
 {{- with (get $.Values.userConfig $key) }}
