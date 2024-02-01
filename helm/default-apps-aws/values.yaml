@@ -262,6 +262,7 @@ apps:
     clusterValues:
       configMap: true
       secret: false
+    dependsOn: prometheus-operator-crd
     enabled: true
     inCluster: true
     namespace: kube-system
@@ -275,6 +276,7 @@ apps:
     clusterValues:
       configMap: true
       secret: false
+    dependsOn: prometheus-operator-crd
     enabled: true
     inCluster: true
     namespace: kube-system

@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Allow customization of the extraConfig priority.
+- Add dependencies on `prometheus-operator-crd` for quicker deployment
 
 ## [0.45.1] - 2024-02-01
 
@@ -30,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add security-bundle app 
+- Add security-bundle app
 
 ## [0.42.0] - 2024-01-22
 
