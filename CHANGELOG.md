@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Allow customization of the extraConfig priority.
 
+### Fixed
+
+- Resolve baseDomain inconcistency when cluster-values is not configured for this App.
+
 ## [0.45.1] - 2024-02-01
 
 ### Fixed

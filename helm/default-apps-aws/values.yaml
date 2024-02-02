@@ -52,7 +52,7 @@ userConfig:
           annotations:
             eks.amazonaws.com/role-arn: "{{ .Values.clusterName }}-Route53Manager-Role"
         domainFilters:
-          - "{{ .Values.baseDomain }}"
+          - '{{ include "baseDomain" . }}'
         txtOwnerId: giantswarm-io-external-dns
         txtPrefix: "{{ .Values.clusterName }}"
         annotationFilter: giantswarm.io/external-dns=managed
