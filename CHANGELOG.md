@@ -9,8 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Allow customization of the extraConfig priority.
 - Add dependencies on `prometheus-operator-crd` for quicker deployment
+
+## [0.45.2] - 2024-02-05
+
+### Added
+
+- Allow customization of the extraConfig priority.
+
+### Fixed
+
+- Resolve baseDomain inconcistency when cluster-values is not configured for this App.
 
 ## [0.45.1] - 2024-02-01
 
@@ -452,7 +461,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.1...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.2...HEAD
+[0.45.2]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.1...v0.45.2
 [0.45.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.0...v0.45.1
 [0.45.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.44.0...v0.45.0
 [0.44.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.43.0...v0.44.0
