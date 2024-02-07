@@ -152,6 +152,7 @@ apps:
     clusterValues:
       configMap: true
       secret: false
+    dependsOn: prometheus-operator-crd
     enabled: true
     namespace: kube-system
     # used by renovate
@@ -202,6 +203,7 @@ apps:
     clusterValues:
       configMap: true
       secret: true
+    dependsOn: prometheus-operator-crd
     enabled: true
     namespace: kube-system
     # used by renovate
@@ -226,6 +228,7 @@ apps:
     clusterValues:
       configMap: true
       secret: false
+    dependsOn: prometheus-operator-crd
     enabled: true
     namespace: kube-system
     # used by renovate
@@ -238,6 +241,7 @@ apps:
     clusterValues:
       configMap: true
       secret: false
+    dependsOn: prometheus-operator-crd
     enabled: true
     namespace: kube-system
     # used by renovate
@@ -257,6 +261,7 @@ apps:
     # repo: giantswarm/vertical-pod-autoscaler-app
     version: 5.0.0
   observabilityBundle:
+    # Includes prometheus-operator-crd
     appName: observability-bundle
     chartName: observability-bundle
     catalog: default
@@ -276,6 +281,7 @@ apps:
     clusterValues:
       configMap: true
       secret: false
+    dependsOn: prometheus-operator-crd
     enabled: true
     inCluster: true
     namespace: kube-system
