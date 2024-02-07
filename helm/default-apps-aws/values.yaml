@@ -208,7 +208,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/external-dns-app
-    version: 2.42.0
+    version: 3.0.0
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
@@ -259,7 +259,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
-    version: 4.6.0
+    version: 5.0.0
   observabilityBundle:
     # Includes prometheus-operator-crd
     appName: observability-bundle
@@ -300,7 +300,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/teleport-kube-agent-app
-    version: 0.7.0
+    version: 0.7.1
     # a list of extraConfigs for the App,
     # It can be secret or configmap
     # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
@@ -319,4 +319,4 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/etcd-kubernetes-resources-count-exporter
-    version: 1.8.0
+    version: 1.9.0
