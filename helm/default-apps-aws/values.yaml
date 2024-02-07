@@ -232,7 +232,7 @@ apps:
     # Includes prometheus-operator-crd
     appName: observability-bundle
     chartName: observability-bundle
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: true
       secret: false
@@ -241,7 +241,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 1.1.1-429d15c1b22937a3d8e8038fb9f0b81a64e259e9
+    version: 1.2.0
   securityBundle:
     appName: security-bundle
     chartName: security-bundle

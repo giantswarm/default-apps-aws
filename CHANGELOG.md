@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update vertical-pod-autoscaler-app to v5.0.0
 - Update etcd-kubernetes-resources-count-exporter to v1.9.0
 - Add dependencies on `prometheus-operator-crd` for quicker deployment
+- Update observability-bundle to v1.2.0
 
 ## [0.45.2] - 2024-02-05
 
