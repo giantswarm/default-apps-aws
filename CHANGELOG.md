@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Update teleport-kube-agent-app to v0.7.1
+- Update external-dns-app to v3.0.0
+- Update vertical-pod-autoscaler-app to v5.0.0
+- Update etcd-kubernetes-resources-count-exporter to v1.9.0
 - Add dependencies on `prometheus-operator-crd` for quicker deployment
 
 ## [0.45.2] - 2024-02-05
