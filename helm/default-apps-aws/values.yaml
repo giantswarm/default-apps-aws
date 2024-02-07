@@ -86,38 +86,6 @@ userConfig:
           prefix: "/registry/"
         events:
           prefix: "/registry/events/"
-  observabilityBundle:
-    configMap:
-      values:
-        userConfig:
-          kubePrometheusStack:
-            configMap:
-              values:
-                global:
-                  rbac:
-                    pspEnabled: true
-                kube-prometheus-stack:
-                  grafana:
-                    rbac:
-                      pspEnabled: true
-                  kube-state-metrics:
-                    podSecurityPolicy:
-                      enabled: true
-                  prometheus-node-exporter:
-                    rbac:
-                      pspEnabled: true
-          prometheusAgent:
-            configMap:
-              values:
-                prometheus-agent:
-                  psp:
-                    enabled: true
-          promtail:
-            configMap:
-              values:
-                promtail:
-                  rbac:
-                    pspEnabled: true
 
 apps:
   aws-pod-identity-webhook:
@@ -264,7 +232,7 @@ apps:
     # Includes prometheus-operator-crd
     appName: observability-bundle
     chartName: observability-bundle
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
       secret: false
@@ -273,7 +241,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 1.0.0
+    version: 1.1.1-429d15c1b22937a3d8e8038fb9f0b81a64e259e9
   securityBundle:
     appName: security-bundle
     chartName: security-bundle
