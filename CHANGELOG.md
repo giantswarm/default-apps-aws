@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update security-bundle to v1.6.1.
+- Update observability-bundle to v1.2.1
 
 ## [0.46.0] - 2024-02-07
 
