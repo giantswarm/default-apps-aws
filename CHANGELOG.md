@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Bump cluster-autoscaler to 1.27.3-gs8.
-
+- Enable secret config for cluster-autoscaler app.
+  
 ## [0.47.0] - 2024-02-09
 
 ### Changed
