@@ -227,7 +227,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
-    version: 5.0.0
+    version: 5.1.0
   observabilityBundle:
     # Includes prometheus-operator-crd
     appName: observability-bundle
@@ -255,7 +255,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/security-bundle
-    version: 1.5.0
+    version: 1.6.1
   teleport-kube-agent:
     appName: teleport-kube-agent
     chartName: teleport-kube-agent

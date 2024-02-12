@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.47.0] - 2024-02-09
+
 ### Changed
 
+- Update security-bundle to v1.6.1.
 - Update observability-bundle to v1.2.1
 
 ## [0.46.0] - 2024-02-07
@@ -471,7 +474,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.46.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.47.0...HEAD
+[0.47.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.46.0...v0.47.0
 [0.46.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.2...v0.46.0
 [0.45.2]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.1...v0.45.2
 [0.45.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.0...v0.45.1
