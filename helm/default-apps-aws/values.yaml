@@ -158,12 +158,12 @@ apps:
     catalog: default
     clusterValues:
       configMap: true
-      secret: false
+      secret: true
     enabled: true
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cluster-autoscaler-app
-    version: 1.27.3-gs3
+    version: 1.27.3-gs8
   externalDns:
     appName: external-dns
     chartName: external-dns-app
