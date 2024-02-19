@@ -57,7 +57,7 @@ spec:
     name: {{ tpl $extraConfig.name $ }}
     namespace: {{ tpl $extraConfig.namespace $ }}
     {{- if $extraConfig.priority }}
-    priotity: {{ $extraConfig.priority }}
+    priority: {{ $extraConfig.priority }}
     {{- end}}
   {{- end }}
   {{- end }}
