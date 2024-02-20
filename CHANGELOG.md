@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Set `ingresShim` for `cert-manager` app.
+
 ## [0.48.1] - 2024-02-20
 
 ### Fixed
