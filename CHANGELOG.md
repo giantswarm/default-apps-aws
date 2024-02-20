@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Set `ingresShim` for `cert-manager` app.
 
+## [0.48.1] - 2024-02-20
+
 ### Fixed
 
 - Default app priority typo.
@@ -493,7 +495,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.48.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.48.1...HEAD
+[0.48.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.48.0...v0.48.1
 [0.48.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.47.0...v0.48.0
 [0.47.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.46.0...v0.47.0
 [0.46.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.45.2...v0.46.0
