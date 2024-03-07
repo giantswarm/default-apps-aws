@@ -134,14 +134,14 @@ apps:
     version: 1.1.1
   ciliumServiceMonitors:
     appName: cilium-servicemonitors
-    chartName: cilium-servicemonitors-app
+    chartName: cilium-servicemonitors
     catalog: default
     enabled: true
     clusterValues:
       configMap: false
       secret: false
     dependsOn: prometheus-operator-crd
-    namespace: giantswarm
+    namespace: kube-system
     # used by renovate
     # repo: giantswarm/chart-operator-extensions
     version: 0.1.2
