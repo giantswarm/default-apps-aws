@@ -143,7 +143,7 @@ apps:
     dependsOn: prometheus-operator-crd
     namespace: kube-system
     # used by renovate
-    # repo: giantswarm/chart-operator-extensions
+    # repo: giantswarm/cilium-servicemonitors-app
     version: 0.1.2
   cluster-autoscaler:
     appName: cluster-autoscaler
