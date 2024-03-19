@@ -173,7 +173,7 @@ apps:
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
       secret: false
@@ -181,7 +181,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/metrics-server-app
-    version: 2.4.2
+    version: 2.4.2-14bb67c92f97e9b8118600cc66c88aa486747f6b
   netExporter:
     appName: net-exporter
     chartName: net-exporter
