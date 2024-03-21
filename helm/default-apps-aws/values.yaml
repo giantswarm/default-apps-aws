@@ -158,6 +158,15 @@ apps:
     # used by renovate
     # repo: giantswarm/cluster-autoscaler-app
     version: 1.27.3-gs8
+  k8sDnsNodeCacheApp:
+    appName: k8s-dns-node-cache
+    chartName: k8s-dns-node-cache-app
+    catalog: default
+    enabled: true
+    namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/k8s-dns-node-cache-app
+    version: 2.6.1
   externalDns:
     appName: external-dns
     chartName: external-dns-app
