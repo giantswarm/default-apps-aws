@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Set externalDns registry value explicitly to avoid conflicts with Catalog value.
+- Repository: Some chores. ([#439](https://github.com/giantswarm/default-apps-aws/pull/439))
+  - ABS: Align `main.yaml`.
 
 ### Removed
 
