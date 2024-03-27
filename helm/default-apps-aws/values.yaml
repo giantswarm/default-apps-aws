@@ -262,7 +262,7 @@ apps:
   teleport-kube-agent:
     appName: teleport-kube-agent
     chartName: teleport-kube-agent
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
       secret: true
@@ -271,7 +271,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/teleport-kube-agent-app
-    version: 0.7.1
+    version: 0.7.1-07f1302094fb2d2236f6bd842eab975ac1199461
     # a list of extraConfigs for the App,
     # It can be secret or configmap
     # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
