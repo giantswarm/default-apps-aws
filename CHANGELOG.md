@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - GitHub: Update `diff_helm_render_templates.yaml`.
   - GitHub: Update `pull_request_template.md`.
   - Renovate: Update PR body.
+  - Repository: Update `README.md`.
 
 ### Removed
 
