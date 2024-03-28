@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Repository: Some chores. ([#439](https://github.com/giantswarm/default-apps-aws/pull/439))
   - ABS: Align `main.yaml`.
   - CircleCI: Align `config.yml`.
+  - GitHub: Update `diff_helm_render_templates.yaml`.
 
 ### Removed
 
