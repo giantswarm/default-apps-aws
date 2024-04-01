@@ -12,9 +12,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `cilium-servicemonitors` app.
 - Add `k8s-dns-node-cache` app.
 
-### Fixed
+### Changed
 
 - Set externalDns registry value explicitly to avoid conflicts with Catalog value.
+- Repository: Some chores. ([#439](https://github.com/giantswarm/default-apps-aws/pull/439))
+  - ABS: Align `main.yaml`.
+  - CircleCI: Align `config.yml`.
+  - GitHub: Update `diff_helm_render_templates.yaml`.
+  - GitHub: Update `pull_request_template.md`.
+  - Renovate: Update PR body.
+  - Repository: Update `README.md`.
+
+### Removed
+
+- Repository: Some chores. ([#439](https://github.com/giantswarm/default-apps-aws/pull/439))
+  - Repository: Remove `.nancy-ignore*`.
 
 ## [0.49.0] - 2024-02-20
 

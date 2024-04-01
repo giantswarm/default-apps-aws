@@ -1,4 +1,4 @@
+chart-dir: helm/default-apps-aws
 replace-chart-version-with-git: true
 generate-metadata: true
-chart-dir: ./helm/default-apps-aws
-destination: ./build
+catalog-base-url: https://giantswarm.github.io/cluster-catalog/
