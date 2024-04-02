@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - GitHub: Update `pull_request_template.md`.
   - Renovate: Update PR body.
   - Repository: Update `README.md`.
-- Bump aws-pod-identity-webhook to 1.14.2.
+- Bump `aws-pod-identity-webhook` to 1.14.2.
 
 ### Removed
 
