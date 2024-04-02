@@ -81,7 +81,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/aws-pod-identity-webhook
-    version: 1.14.1
+    version: 1.14.2
   capi-node-labeler:
     appName: capi-node-labeler
     chartName: capi-node-labeler
