@@ -290,4 +290,4 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/etcd-kubernetes-resources-count-exporter
-    version: 1.9.0
+    version: 1.10.0
