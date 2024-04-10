@@ -70,15 +70,16 @@ userConfig:
   securityBundle:
     configMap:
       values:
-        kyverno:
-          configMap:
-            values:
-              kyverno:
-                admissionController:
-                  tolerations:
-                  - key: "node.cluster.x-k8s.io/uninitialized"
-                    operator: "Exists"
-                    effect: "NoSchedule"
+        userConfig:
+          kyverno:
+            configMap:
+              values:
+                kyverno:
+                  admissionController:
+                    tolerations:
+                    - key: "node.cluster.x-k8s.io/uninitialized"
+                      operator: "Exists"
+                      effect: "NoSchedule"
 apps:
   aws-pod-identity-webhook:
     appName: aws-pod-identity-webhook
