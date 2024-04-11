@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.50.0] - 2024-04-09
+
 ### Added
 
 - Add `cilium-servicemonitors` app.
@@ -522,7 +524,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.49.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.50.0...HEAD
+[0.50.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.49.0...v0.50.0
 [0.49.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.48.1...v0.49.0
 [0.48.1]: https://github.com/giantswarm/default-apps-aws/compare/v0.48.0...v0.48.1
 [0.48.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.47.0...v0.48.0
