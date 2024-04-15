@@ -9,13 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.51.0] - 2024-04-15
 
+### Added
+- Add toleration for `uninitialized` nodes to the kyverno admission controller.
+
 ## [0.50.0] - 2024-04-09
 
 ### Added
 
 - Add `cilium-servicemonitors` app.
 - Add `k8s-dns-node-cache` app.
-- Add toleration for `uninitialized` nodes to the kyverno admission controller.
 
 ### Changed
 
