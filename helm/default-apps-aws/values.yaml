@@ -67,7 +67,19 @@ userConfig:
           prefix: "/registry/"
         events:
           prefix: "/registry/events/"
-
+  securityBundle:
+    configMap:
+      values:
+        userConfig:
+          kyverno:
+            configMap:
+              values:
+                kyverno:
+                  admissionController:
+                    tolerations:
+                    - key: "node.cluster.x-k8s.io/uninitialized"
+                      operator: "Exists"
+                      effect: "NoSchedule"
 apps:
   aws-pod-identity-webhook:
     appName: aws-pod-identity-webhook
