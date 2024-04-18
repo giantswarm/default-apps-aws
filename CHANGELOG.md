@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Bump `teleport-kube-agent` to 0.9.0.
+
 ## [0.51.0] - 2024-04-15
 
 ### Added
