@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Downgrade vertical-pod-autoscaler to v5.1.0 due to a bug in newer version that causes the updater to panic.
+
 ## [0.51.0] - 2024-04-15
 
 ### Added
