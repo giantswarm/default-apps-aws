@@ -25,7 +25,7 @@ rules:
   resources: ["apps"]
   verbs: ["get", "list", "patch", "update"]
 - apiGroups: [""]
-  resources: ["configmaps"]
+  resources: ["configmaps", "secrets"]
   verbs: ["get", "list", "patch", "update"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
