@@ -1,0 +1,107 @@
+{{- if .Values.deleteOptions.moveAppsHelmOwnershipToClusterAws }}
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+  namespace: "{{ $.Release.Namespace }}"
+  annotations:
+    "helm.sh/hook": "post-delete"
+    "helm.sh/hook-weight": "-1"
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+  namespace: "{{ $.Release.Namespace }}"
+  annotations:
+    "helm.sh/hook": "post-delete"
+    "helm.sh/hook-weight": "-1"
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+rules:
+- apiGroups: ["application.giantswarm.io"]
+  resources: ["apps"]
+  verbs: ["get", "list", "patch", "update"]
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get", "list", "patch", "update"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+  namespace: "{{ $.Release.Namespace }}"
+  annotations:
+    "helm.sh/hook": "post-delete"
+    "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded,hook-failed"
+    "helm.sh/hook-weight": "-1"
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+subjects:
+- kind: ServiceAccount
+  name: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+  namespace: "{{ $.Release.Namespace }}"
+roleRef:
+  kind: Role
+  name: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+  namespace: "{{ $.Release.Namespace }}"
+  annotations:
+    "helm.sh/hook": "post-delete"
+    "helm.sh/hook-delete-policy": "before-hook-creation,hook-succeeded"
+    "helm.sh/hook-weight": "0"
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+spec:
+  ttlSecondsAfterFinished: 2592000 # 30 days
+  template:
+    metadata:
+      name: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+      namespace: "{{ $.Release.Namespace }}"
+      labels:
+        {{- include "labels.common" $ | nindent 8 }}
+    spec:
+      restartPolicy: Never
+      serviceAccountName: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+      containers:
+      - name: update-apps-release-name
+        image: gsoci.azurecr.io/giantswarm/kubectl:1.29.2
+        command:
+        - "/bin/sh"
+        - "-xc"
+        - |
+          NAMESPACE="{{ $.Release.Namespace }}"
+
+          echo "Update Helm release name for all Apps owned by"
+          for app_name in $(kubectl get Apps -n $NAMESPACE -l giantswarm.io/cluster={{ $.Values.clusterName }},app.kubernetes.io/name=default-apps-aws,giantswarm.io/managed-by={{ $.Values.clusterName }}-default-apps -o name); do
+            kubectl patch $app_name --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "{{ $.Values.clusterName }}"}}}'
+          done
+
+          echo "Update Helm release name for all ConfigMaps"
+          for config_map_name in $(kubectl get ConfigMaps -n $NAMESPACE -l giantswarm.io/cluster={{ $.Values.clusterName }},app.kubernetes.io/name=default-apps-aws,giantswarm.io/managed-by={{ $.Values.clusterName }}-default-apps -o name); do
+            kubectl patch $config_map_name --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "{{ $.Values.clusterName }}"}}}'
+          done
+
+
+          CONFIG_MAP_NAME="myplay"
+          cm=$(kubectl get ConfigMap $CONFIG_MAP_NAME -o json)
+          releaseName=$(echo "$cm" | jq -r ".metadata.annotations[\"meta.helm.sh\/release-name\"]")
+
+          echo "before check"
+          if [ "$releaseName" = "default-play" ]; then
+            echo "found old default play"
+            kubectl patch ConfigMap $CONFIG_MAP_NAME --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "play"}}}'
+            kubectl annotate ConfigMap $CONFIG_MAP_NAME helm.sh/resource-policy-
+            echo "now we have a new play"
+          fi
+          echo "after check, will sleep now"
+          # sleep 60s
+          echo "done sleeping"
+{{- end }}

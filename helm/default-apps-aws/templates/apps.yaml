@@ -10,6 +10,9 @@ metadata:
     # app-operator will make sure that the app on which it depends is installed before
     app-operator.giantswarm.io/depends-on: {{ printf "%s-%s" $.Values.clusterName .dependsOn -}}
     {{- end }}
+    {{- if .Values.deleteOptions.moveAppsHelmOwnershipToClusterAws }}
+    helm.sh/resource-policy: keep
+    {{- end }}
   labels:
     {{- include "labels.common" $ | nindent 4 }}
     {{- if .inCluster }}  
@@ -81,6 +84,10 @@ spec:
 apiVersion: v1
 kind: ConfigMap
 metadata:
+  {{- if .Values.deleteOptions.moveAppsHelmOwnershipToClusterAws }}
+  annotations:
+    helm.sh/resource-policy: keep
+  {{- end }}
   labels:
     {{- include "labels.common" $ | nindent 4 }}
   name: {{ $.Values.clusterName }}-{{ $appName }}-user-values
@@ -98,6 +105,10 @@ data:
 apiVersion: v1
 kind: Secret
 metadata:
+  {{- if .Values.deleteOptions.moveAppsHelmOwnershipToClusterAws }}
+  annotations:
+    helm.sh/resource-policy: keep
+  {{- end }}
   labels:
     {{- include "labels.common" $ | nindent 4 }}
   name: {{ $.Values.clusterName }}-{{ $appName }}-user-values

@@ -2,6 +2,9 @@ clusterName: ""
 organization: ""
 baseDomain: ""
 
+deleteOptions:
+  moveAppsHelmOwnershipToClusterAws: false
+
 userConfig:
   certManager:
     configMap:
