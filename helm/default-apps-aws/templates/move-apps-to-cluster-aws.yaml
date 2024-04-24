@@ -95,11 +95,13 @@ spec:
 
           echo "Update Helm release name for all Apps owned by"
           for app_name in $(kubectl get Apps -n $NAMESPACE -l giantswarm.io/cluster={{ $.Values.clusterName }},app.kubernetes.io/name=default-apps-aws,giantswarm.io/managed-by={{ $.Values.clusterName }}-default-apps -o name); do
-            kubectl patch $app_name --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "{{ $.Values.clusterName }}"}}}'
+            kubectl patch -n $NAMESPACE $app_name --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "{{ $.Values.clusterName }}"}}}'
+            kubectl annotate -n $NAMESPACE $app_name helm.sh/resource-policy-
           done
 
           echo "Update Helm release name for all ConfigMaps"
           for config_map_name in $(kubectl get ConfigMaps -n $NAMESPACE -l giantswarm.io/cluster={{ $.Values.clusterName }},app.kubernetes.io/name=default-apps-aws,giantswarm.io/managed-by={{ $.Values.clusterName }}-default-apps -o name); do
-            kubectl patch $config_map_name --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "{{ $.Values.clusterName }}"}}}'
+            kubectl patch -n $NAMESPACE $config_map_name --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "{{ $.Values.clusterName }}"}}}'
+            kubectl annotate -n $NAMESPACE $config_map_name helm.sh/resource-policy-
           done
 {{- end }}
