@@ -72,9 +72,21 @@ spec:
     spec:
       restartPolicy: Never
       serviceAccountName: {{ $.Values.clusterName }}-move-apps-to-cluster-aws
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile:
+          type: RuntimeDefault
       containers:
       - name: update-apps-release-name
         image: gsoci.azurecr.io/giantswarm/kubectl:1.29.2
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+          privileged: false
+          runAsGroup: 65532
+          runAsUser: 65532
         command:
         - "/bin/sh"
         - "-xc"
