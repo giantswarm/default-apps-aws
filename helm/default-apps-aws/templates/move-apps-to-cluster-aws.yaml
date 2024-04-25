@@ -97,11 +97,23 @@ spec:
           for app_name in $(kubectl get Apps -n $NAMESPACE -l giantswarm.io/cluster={{ $.Values.clusterName }},app.kubernetes.io/name=default-apps-aws,giantswarm.io/managed-by={{ $.Values.clusterName }}-default-apps -o name); do
             kubectl patch -n $NAMESPACE $app_name --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "{{ $.Values.clusterName }}"}}}'
             kubectl annotate -n $NAMESPACE $app_name helm.sh/resource-policy-
+            kubectl label -n $NAMESPACE $app_name app.kubernetes.io/instance-
+            kubectl label -n $NAMESPACE $app_name app.kubernetes.io/name-
+            kubectl label -n $NAMESPACE $app_name app.kubernetes.io/version-
+            kubectl label -n $NAMESPACE $app_name application.giantswarm.io/team-
+            kubectl label -n $NAMESPACE $app_name giantswarm.io/managed-by-
+            kubectl label -n $NAMESPACE $app_name helm.sh/chart-
           done
 
           echo "Update Helm release name for all ConfigMaps"
           for config_map_name in $(kubectl get ConfigMaps -n $NAMESPACE -l giantswarm.io/cluster={{ $.Values.clusterName }},app.kubernetes.io/name=default-apps-aws,giantswarm.io/managed-by={{ $.Values.clusterName }}-default-apps -o name); do
             kubectl patch -n $NAMESPACE $config_map_name --type=merge -p '{"metadata": {"annotations": {"meta.helm.sh/release-name": "{{ $.Values.clusterName }}"}}}'
             kubectl annotate -n $NAMESPACE $config_map_name helm.sh/resource-policy-
+            kubectl label -n $NAMESPACE $config_map_name app.kubernetes.io/instance-
+            kubectl label -n $NAMESPACE $config_map_name app.kubernetes.io/name-
+            kubectl label -n $NAMESPACE $config_map_name app.kubernetes.io/version-
+            kubectl label -n $NAMESPACE $config_map_name application.giantswarm.io/team-
+            kubectl label -n $NAMESPACE $config_map_name giantswarm.io/managed-by-
+            kubectl label -n $NAMESPACE $config_map_name helm.sh/chart-
           done
 {{- end }}
