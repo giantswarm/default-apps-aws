@@ -11,7 +11,7 @@ metadata:
     app-operator.giantswarm.io/depends-on: {{ printf "%s-%s" $.Values.clusterName .dependsOn -}}
     {{- end }}
     {{- if $.Values.deleteOptions.moveAppsHelmOwnershipToClusterAws }}
-    helm.sh/resource-policy: keep
+    app-operator.giantswarm.io/paused: "true"
     {{- end }}
   labels:
     {{- include "labels.common" $ | nindent 4 }}
