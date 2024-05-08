@@ -95,9 +95,14 @@ spec:
 
           echo "Remove app-operator finalizer for all Apps owned by default-apps-aws (except bundles that we want to delete regularly)"
           for app_name in $(kubectl get Apps -n $NAMESPACE -l giantswarm.io/cluster={{ $.Values.clusterName }},app.kubernetes.io/name=default-apps-aws,giantswarm.io/managed-by={{ $.Values.clusterName }}-default-apps -o name); do
-            if ! grep -q "bundle" <<< "$app_name"; then
-              kubectl patch -n $NAMESPACE $app_name --type=merge -p '{"metadata": {"finalizers": null}}'
-            fi
+            case "$app_name" in
+              *bundle*)
+                echo "do nothing for bundles"
+                ;;
+              *)
+                kubectl patch -n $NAMESPACE $app_name --type=merge -p '{"metadata": {"finalizers": null}}'
+                ;;
+            esac
           done
 
           echo "Remove app-operator finalizer from all observability-bundle apps"
