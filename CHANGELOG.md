@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Helm value `.Values.deleteOptions.moveAppsHelmOwnershipToClusterAws` that enables migration of apps from default-apps-aws to cluster-aws (apps are paused, so they are not removed from the WC when default-apps-aws is deleted).
+
+### Fixed
 - Downgrade vertical-pod-autoscaler to v5.1.0 due to a bug in newer version that causes the updater to panic.
 
 ## [0.51.0] - 2024-04-15
