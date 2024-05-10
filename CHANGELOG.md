@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.52.0] - 2024-05-09
+
 ### Added
 - Helm value `.Values.deleteOptions.moveAppsHelmOwnershipToClusterAws` that enables migration of apps from default-apps-aws to cluster-aws (apps are paused, so they are not removed from the WC when default-apps-aws is deleted).
 
@@ -534,7 +536,8 @@ Re-release because v0.21.0 artifact did not get produced.
 ## [0.1.0] - 2022-02-08
 
 
-[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.51.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-aws/compare/v0.52.0...HEAD
+[0.52.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.51.0...v0.52.0
 [0.51.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.50.0...v0.51.0
 [0.50.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.49.0...v0.50.0
 [0.49.0]: https://github.com/giantswarm/default-apps-aws/compare/v0.48.1...v0.49.0
