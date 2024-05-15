@@ -586,6 +586,18 @@
         "clusterName": {
             "type": "string"
         },
+        "deleteOptions": {
+            "type": "object",
+            "title": "Delete options",
+            "properties": {
+                "moveAppsHelmOwnershipToClusterAws": {
+                    "type": "boolean",
+                    "title": "Move Apps Helm ownership to cluster-aws",
+                    "description": "Don't delete Apps (and their ConfigMaps) and update Helm `meta.helm.sh/release-name` annotation on all resources so they are owned by cluster-aws. That way cluster-aws can continue updating same resources that were previously created by default-apps-aws.",
+                    "default": false
+                }
+            }
+        },
         "organization": {
             "type": "string"
         },
